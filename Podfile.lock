@@ -1,0 +1,19 @@
+PODS:
+  - DKCircleButton (1.1)
+  - JTSlideShadowAnimation (1.0.1)
+  - LGSideMenuController (1.0.10)
+  - SDevCircleButton (0.0.1)
+
+DEPENDENCIES:
+  - DKCircleButton (~> 1.1)
+  - JTSlideShadowAnimation (~> 1.0)
+  - LGSideMenuController (~> 1.0.0)
+  - SDevCircleButton
+
+SPEC CHECKSUMS:
+  DKCircleButton: 62564c9debae08ad77dabb8d9658dfeb5520f2c4
+  JTSlideShadowAnimation: abe7fb7b0be0690229e6fe6e93e77998e8cfe279
+  LGSideMenuController: 8682bdbd0008c1acfbce95eaf96cc3657bca5f95
+  SDevCircleButton: 1a862c2dfc16634c3f3aac29e1c0e6cfda71b06b
+
+COCOAPODS: 0.39.0

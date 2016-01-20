@@ -1,0 +1,6 @@
+framework module JTSlideShadowAnimation {
+  umbrella header "JTSlideShadowAnimation-umbrella.h"
+
+  export *
+  module * { export * }
+}

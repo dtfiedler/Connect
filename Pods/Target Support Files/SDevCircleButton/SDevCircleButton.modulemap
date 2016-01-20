@@ -1,0 +1,6 @@
+framework module SDevCircleButton {
+  umbrella header "SDevCircleButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
