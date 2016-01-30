@@ -84,14 +84,22 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-Connect/AFNetworking.framework"
   install_framework "Pods-Connect/DKCircleButton.framework"
+  install_framework "Pods-Connect/DZNSegmentedControl.framework"
   install_framework "Pods-Connect/JTSlideShadowAnimation.framework"
   install_framework "Pods-Connect/LGSideMenuController.framework"
+  install_framework "Pods-Connect/OpenWeatherMapAPI.framework"
   install_framework "Pods-Connect/SDevCircleButton.framework"
+  install_framework "Pods-Connect/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-Connect/AFNetworking.framework"
   install_framework "Pods-Connect/DKCircleButton.framework"
+  install_framework "Pods-Connect/DZNSegmentedControl.framework"
   install_framework "Pods-Connect/JTSlideShadowAnimation.framework"
   install_framework "Pods-Connect/LGSideMenuController.framework"
+  install_framework "Pods-Connect/OpenWeatherMapAPI.framework"
   install_framework "Pods-Connect/SDevCircleButton.framework"
+  install_framework "Pods-Connect/SwiftyJSON.framework"
 fi

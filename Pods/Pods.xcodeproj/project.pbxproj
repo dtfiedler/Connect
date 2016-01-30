@@ -7,124 +7,295 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		055EA27E8EFA2C3AC8B2D4674738AD4C /* JTSlideShadowAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D145B34269C05DD37C14F9DF77EB6630 /* JTSlideShadowAnimation.m */; };
-		0BB3395F7D8EE83C7935E959D887D28B /* SDevCircleButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE9E14C759ACCD310E09C5D95834AB5F /* SDevCircleButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0C97CE08A0E00DDCB5D4018A43FACD2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
-		0EEDAC39768FACEF4024BC647C0E8B96 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B3C2F7A60189AA38D256A0120B8730 /* CoreGraphics.framework */; };
-		0FFA2834E364C1BABC233C9F4E1EB895 /* Pods-Connect-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B56E38E7C85FE665C382C27A204D964 /* Pods-Connect-dummy.m */; };
-		374F06A6DB13AE4A50CE3FD1675839A7 /* JTSlideShadowAnimation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A0DFEE30D16855B70A1253ABF64772C /* JTSlideShadowAnimation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39D77BA3DC0584F71DA03B34D531446F /* DKCircleButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 05EEC213E909AF34622F626918CB53FB /* DKCircleButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C62EC9DF4F0511310DA7037FCB2B745 /* Pods-Connect-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3939CB3316E81E955882962ECAAAB88 /* Pods-Connect-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4DB265B9BEA48D356C014800C13E1697 /* DKCircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567C9F7C6C3EF232F1D5CFBBA7909E3 /* DKCircleButton.m */; };
-		55F1FC751431D1F2F88E5EA586C76D0E /* LGSideMenuController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80667194FE7C4654E4C2BF87511E85B7 /* LGSideMenuController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D727410ACCDFFAB7EB54E312B35617C /* SDevCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A95759D1398A05A88F1F850460D7E5E /* SDevCircleButton.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7360A134011FC30D28D0678AC5DE85CB /* DKCircleButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F012B3CE303A1F313362A1E6D9901002 /* DKCircleButton-dummy.m */; };
-		81FCB8C90280A6A920800EC688FDD61F /* LGSideMenuController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B399897489B9C18C48EB8561A14B139 /* LGSideMenuController-dummy.m */; };
-		88C405820A5D4FEA9592D0D63AF98850 /* SDevCircleButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D13A3C1326CC4439FC4781D5DC749C66 /* SDevCircleButton-dummy.m */; };
-		A0683339B44A13CDAA7563B239AE5E4A /* DKCircleButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97987D5F181C1546818E8CDE224F3E30 /* DKCircleButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0A04091DE123EAA874B7E68F9885967 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
-		BD5488D80C1FBFDD1FEE2CD2F621F78B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
-		C1FCBAC9363DD758CDA98D62B1ADF383 /* LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2488CEE35BC1ABE8A38B68D0003335D /* LGSideMenuController.m */; };
-		C3C2DDB3550B988F213E6884EE787C1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
-		C4E940831C4FD7BF00820C1C /* MenuHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E940821C4FD7BE00820C1C /* MenuHeaderCell.swift */; };
-		D6FF70DA39B25A62398FFC823BE49EFA /* JTSlideShadowAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE939019B4F4CDEFED6462FDA777E6C /* JTSlideShadowAnimation-dummy.m */; };
-		D8F58CBD42C1F2338B107A29A79FF174 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F79ACD206D7284CF469DA6B24AFACE9 /* UIKit.framework */; };
-		E8815B88D7B2A78AD6A7A3F88197CAE5 /* JTSlideShadowAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AC9427EA7AFD2C5FC0973C0849808F4 /* JTSlideShadowAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE4DF94AA0C8673BFC25DD709AE1F529 /* LGSideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1932A89C9FDE9FB90449831C461E1638 /* LGSideMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F22152893CBA8B3DA5778E29E8758BDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
+		00D551902881BAEAC3A8CFEDAA7D2971 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72CD91A9F5BCBFDB73E2A94BDE141831 /* SystemConfiguration.framework */; };
+		055EA27E8EFA2C3AC8B2D4674738AD4C /* JTSlideShadowAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC0394112C5F46429A44796AEA51005 /* JTSlideShadowAnimation.m */; };
+		093DF21B02E222ACBD84FDC1FD9516E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD42BD66FC79490BEB62281517D559AF /* Foundation.framework */; };
+		09F4AED5C83B59284A1A8E44566A0C87 /* Pods-Connect-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3939CB3316E81E955882962ECAAAB88 /* Pods-Connect-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BB927972A4B78BE805DE85B9EB7DA89 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC607B4AEF374E03573390FE5C4F44C /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0C97CE08A0E00DDCB5D4018A43FACD2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD42BD66FC79490BEB62281517D559AF /* Foundation.framework */; };
+		0E4864732360399F85A1F8580B8761C3 /* AFImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6720592E09FEB0CBA39C84C2FFB723ED /* AFImageRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EEDAC39768FACEF4024BC647C0E8B96 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD60587756A6F81921CC5CD8081E7AE /* CoreGraphics.framework */; };
+		10694EBE0CA6160B44AD5B2D394C6E58 /* UIScrollView+DZNSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C94CEBDCECF2CC8A5D985F5137ACCB3D /* UIScrollView+DZNSegmentedControl.m */; };
+		16A9365E7CA88B885FCC968AFAFDBCE1 /* DZNSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 79A71C65BACF5A00ACFF2B38B16C7B29 /* DZNSegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24DB16F18145D9CF600AF1A84FFCAC8C /* SDevCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D79B7C039D147DEA85214836AAE436E /* SDevCircleButton.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		254D8201084C563C7DD55350C1F8B70F /* OWMWeatherAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F62A117B5370DF8DD55DA65A28975492 /* OWMWeatherAPI.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		25A7E07DD6F8C1A2CB3ED418D3ECCF54 /* AFXMLRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 09E975A50F00163527B124A029DE76AE /* AFXMLRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CB4246B6F823132705C369E507F3831 /* OpenWeatherMapAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A170194B7F7CC94770C8299E3048AEC /* OpenWeatherMapAPI-dummy.m */; };
+		2E00ED6335D0F493775C4246A81AD6B1 /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 50F0CB847DA4E4DB08C0A3DB4164F34B /* AFHTTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31FE5A96833352A3E3A6CA51B3EFB41E /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DAE22D7ED6FF35B7452957A73B597BA /* SwiftyJSON-dummy.m */; };
+		354991AF2508B9E5DD521C96E5C59C51 /* UIScrollView+DZNSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0339FF0BB7E7A2B7DE836FD31B7AB38B /* UIScrollView+DZNSegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		374F06A6DB13AE4A50CE3FD1675839A7 /* JTSlideShadowAnimation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50CDB6F845630E3AFACFB23AD43B6E35 /* JTSlideShadowAnimation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39D77BA3DC0584F71DA03B34D531446F /* DKCircleButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CFC8D6312DD7BBD7FB4CFB2B3F52EF9 /* DKCircleButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4052458729EF18158F1D4F605B5F1EB6 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 81C5753B658588517A95D25664363460 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DB265B9BEA48D356C014800C13E1697 /* DKCircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 544F5B821363BA8F39E9F074FD571479 /* DKCircleButton.m */; };
+		4E27765ABA0DD96225F06C723687CCAB /* OWMWeatherAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = A766A5FF23897F47B1771B18D875E8E6 /* OWMWeatherAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		554E2995F94EE6A826F99B655625ECB0 /* DZNSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0BDACA1BF6544B9D4E4ED2615649DA /* DZNSegmentedControl.m */; };
+		55F1FC751431D1F2F88E5EA586C76D0E /* LGSideMenuController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0026533073FE340ECEA2BBB1E1D2083 /* LGSideMenuController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E37D2A1E3FE51EC7D59F75BB401EDEA /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BB7BE2743AB53E70A17396DF000609 /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		60CFCAE0D8E68E042B69FEDA9D9D3E1A /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 02FF2ACAE745B5D4690DEB7E9FE88EA2 /* AFURLConnectionOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F674FDC67D89CADA86F3C6148434FA3 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 828E371067107DC02486908E232343A6 /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7360A134011FC30D28D0678AC5DE85CB /* DKCircleButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 219575866953F1B07C1A3885E7C53D54 /* DKCircleButton-dummy.m */; };
+		7522455C2CDCF572F35DBAF933C3C8DF /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 60364B763DDB8237675B03C941383735 /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		786D6E252DB81AECA220877FB979613A /* DZNSegmentedControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF163BB2C94B8A566B9DF8195A9183DF /* DZNSegmentedControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EEB4B3EA5FF86A921ED000E7FE3403F /* SDevCircleButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A3BC7FA3F93D8004A01A5D9A06D6069 /* SDevCircleButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81FCB8C90280A6A920800EC688FDD61F /* LGSideMenuController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A21E64F36D93EBA6C4D404848F0FA1CA /* LGSideMenuController-dummy.m */; };
+		87DF808B9FB0B55C32161B133963B58B /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 348C8CC272EF1F5BBF0C8423AD47442B /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8A091CCDC256BD3826036ACC8E0C57E7 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 130ABDD2D0CE2B35C9B53AD94E42883E /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A7F64E38C918BD8DDA8E509B9B95A43 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD60587756A6F81921CC5CD8081E7AE /* CoreGraphics.framework */; };
+		8BE3CF39F8644E7BF3CC5BB0B45AE2B3 /* DZNSegmentedControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A0C0DA0443B031261FA738F1D76868 /* DZNSegmentedControl-dummy.m */; };
+		8FE051FE58995C6B427FAFE41CD9F0DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD42BD66FC79490BEB62281517D559AF /* Foundation.framework */; };
+		911F87600315B9373127CCEBF419F92F /* AFJSONRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = D7858E74D5F7C6E5E34CB36EFB27DDCB /* AFJSONRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9412A1A2A7A3314FC6879AACAC34DC82 /* AFPropertyListRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 692474FC44C85FFBD781A25A7C68B5E0 /* AFPropertyListRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B2A3113BBD4C9F2282966A32AB71740 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040C09B94F19533FBD391278CB20185D /* AFNetworking.framework */; };
+		9BD5CD46EDA394F188D046A6968C63A9 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F664983913E53CA218460ABBB43C8AD3 /* AFNetworking-dummy.m */; };
+		9E4136378DF37CCE638230F03EC29C10 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0DE2A527957053E9EA30FCF16A2DBD /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A0683339B44A13CDAA7563B239AE5E4A /* DKCircleButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 620623D4B61F1F51DEF7CC54586E5D7E /* DKCircleButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0A04091DE123EAA874B7E68F9885967 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD42BD66FC79490BEB62281517D559AF /* Foundation.framework */; };
+		A73FD8EEEB37BBE7B9C3193DCD1DD8FA /* OpenWeatherMapAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABAFCBF4EB15B16BFF2224E39E7EA7B3 /* OpenWeatherMapAPI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD1912BEA478D0F70BF23EB7DEEB2630 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C81227D5F6CF1FC4A06AD6A625B2F5D /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B7948FC7E1D9D186CC3F7D6F21C6CBA1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80418513F524E9CD72A718B3A5E4EBDD /* UIKit.framework */; };
+		B93604D408D9BD7AB269E22171D16C8E /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 179ABBAD4FA28117BB75BE9D0EE8E51A /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BD5488D80C1FBFDD1FEE2CD2F621F78B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD42BD66FC79490BEB62281517D559AF /* Foundation.framework */; };
+		BE8A364C0BFE09DD298D32DC69748523 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 089DF09C3065794614C7ED92102ADFDB /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C14A4C963B7F4725A1B0B292822B813B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD42BD66FC79490BEB62281517D559AF /* Foundation.framework */; };
+		C1FCBAC9363DD758CDA98D62B1ADF383 /* LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 985F06C064F45D27B223CAEB1574F65E /* LGSideMenuController.m */; };
+		C65BC443666409F3FC2FA21F507000BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD42BD66FC79490BEB62281517D559AF /* Foundation.framework */; };
+		CD6D6FC15AEF5AC7DB82955041693F21 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5AEAFEDB7BF0756D614DCA592D203B /* Security.framework */; };
+		CF6948A1EAF8ACC086F5B738294EE2C7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1112D71DDBB22599B79C1EFDA0BAF572 /* MobileCoreServices.framework */; };
+		CFF9225579D934869127F9D8531FAEED /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = EE67A63A363C4C918FFE99396E5001DB /* AFHTTPRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D11AD5008DA4CC1A426EE038464DC3FA /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FD75FE81847F5A2B2AC69352B9DDB680 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2715D53C94A317648CA4EA6D61A7CE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD42BD66FC79490BEB62281517D559AF /* Foundation.framework */; };
+		D6BF8ABE3F5041C8B683871B5C5ECE82 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902FE4CF03808C42FDB606CE10B72F0 /* SwiftyJSON.swift */; };
+		D6FF70DA39B25A62398FFC823BE49EFA /* JTSlideShadowAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AB89715FC0A42C988F63723F5BA12E /* JTSlideShadowAnimation-dummy.m */; };
+		D8F58CBD42C1F2338B107A29A79FF174 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80418513F524E9CD72A718B3A5E4EBDD /* UIKit.framework */; };
+		E8815B88D7B2A78AD6A7A3F88197CAE5 /* JTSlideShadowAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8185A1167E8163405283A7D01BB10E53 /* JTSlideShadowAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E897635A1E7AF12EA971D6461EBC304B /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B3D67C3C14D85C9FE12E97ABDCFB76 /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EE4DF94AA0C8673BFC25DD709AE1F529 /* LGSideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ECAA6EDBA8ECF63491AD88F60C5349D /* LGSideMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F17D77EAF6E88299C492751FAAEB4A1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD42BD66FC79490BEB62281517D559AF /* Foundation.framework */; };
+		FC5C05DA3B60A1D1B95B10C66FB42474 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 668D17A575F6BE3AB3093D003162EDE0 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE9D05F50F317067B2528E4C6CE74AD7 /* SDevCircleButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C483548C6F19851DA1581D6BCF8BB1 /* SDevCircleButton-dummy.m */; };
+		FFDAE3972B72FD740DCA093B992514F4 /* Pods-Connect-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B56E38E7C85FE665C382C27A204D964 /* Pods-Connect-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1B5EF6275DEA79503375D815E31F11D8 /* PBXContainerItemProxy */ = {
+		265F88B738E0E3A4DC4781019236D231 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EA73E0C9E350C9951307BA0F65AAEA68;
-			remoteInfo = JTSlideShadowAnimation;
+			remoteGlobalIDString = E2B5755772AE73DDC89A00C20BD7E53D;
+			remoteInfo = SwiftyJSON;
 		};
-		68EE7CCF2F0C79E0F82BF5D9617FA218 /* PBXContainerItemProxy */ = {
+		270298FB6D7AC6A6C9B846D9813F67D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2C67E32A52F71810F64971D8642CD962;
-			remoteInfo = SDevCircleButton;
+			remoteGlobalIDString = 2AED08D3CF3D74A0BE505B13EF70257D;
+			remoteInfo = DZNSegmentedControl;
 		};
-		8F07120DA738978BB7BE37C5B6A634CA /* PBXContainerItemProxy */ = {
+		2C9BBFCB77413A20EDC158282E1F0405 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E69B92A33BF0DA69766632232536DFFD;
 			remoteInfo = LGSideMenuController;
 		};
-		C9561D4EF445CB2F1C1367A9422C9043 /* PBXContainerItemProxy */ = {
+		39F16469571EECD63DE0014144560C0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBB70B39B24BFA8A41C2439A78FAC47B;
+			remoteInfo = AFNetworking;
+		};
+		4698ACBD0B5563EF840894068C7B05FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 05B3ACEC8F9402E9FE38332F90EF15EA;
 			remoteInfo = DKCircleButton;
 		};
+		57D015F2AFBD662385D3879DDCD5FA06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBB70B39B24BFA8A41C2439A78FAC47B;
+			remoteInfo = AFNetworking;
+		};
+		AE12DC8FF76508458F14770832CB0CC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA73E0C9E350C9951307BA0F65AAEA68;
+			remoteInfo = JTSlideShadowAnimation;
+		};
+		E6B78BFA9F1A69BEB4376446D19AA29F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23E5FF4869C1537A5384CB56E2FACC25;
+			remoteInfo = SDevCircleButton;
+		};
+		EA8AB352B64705A74609398D40F6FEA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF3BFEFFD5F510A0F882962F942B8C83;
+			remoteInfo = OpenWeatherMapAPI;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05EEC213E909AF34622F626918CB53FB /* DKCircleButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DKCircleButton.h; path = DKCircleButton/DKCircleButton.h; sourceTree = "<group>"; };
-		0A0DFEE30D16855B70A1253ABF64772C /* JTSlideShadowAnimation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTSlideShadowAnimation-umbrella.h"; sourceTree = "<group>"; };
+		02FF2ACAE745B5D4690DEB7E9FE88EA2 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		0339FF0BB7E7A2B7DE836FD31B7AB38B /* UIScrollView+DZNSegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+DZNSegmentedControl.h"; path = "Source/UIScrollView+DZNSegmentedControl.h"; sourceTree = "<group>"; };
+		040C09B94F19533FBD391278CB20185D /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05A0C0DA0443B031261FA738F1D76868 /* DZNSegmentedControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DZNSegmentedControl-dummy.m"; sourceTree = "<group>"; };
+		089DF09C3065794614C7ED92102ADFDB /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		09E975A50F00163527B124A029DE76AE /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFXMLRequestOperation.h; path = AFNetworking/AFXMLRequestOperation.h; sourceTree = "<group>"; };
 		0A31140444E3A838C070E20767263CE1 /* Pods-Connect-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Connect-frameworks.sh"; sourceTree = "<group>"; };
 		0CBF5D6DC08C6E26B95A1342A2517389 /* Pods-Connect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Connect.debug.xcconfig"; sourceTree = "<group>"; };
-		13182FB10B1C9707BEDB8906B1945C92 /* SDevCircleButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDevCircleButton.xcconfig; sourceTree = "<group>"; };
-		13DB34EDF6FE706621F8B9EE58923415 /* LGSideMenuController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LGSideMenuController.modulemap; sourceTree = "<group>"; };
-		1932A89C9FDE9FB90449831C461E1638 /* LGSideMenuController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuController.h; path = LGSideMenuController/LGSideMenuController.h; sourceTree = "<group>"; };
-		19781F2FD2549D80D1D128C9C25369FD /* DKCircleButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DKCircleButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		19C581EF47D87C65E42FBF2D0A554166 /* SDevCircleButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SDevCircleButton.modulemap; sourceTree = "<group>"; };
+		0E69DB174D4EF78B565CFB6B69F9077F /* JTSlideShadowAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JTSlideShadowAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F96A82F18069D5537DA1C7FF7CC1DFB /* libGTM_KVO.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_KVO.a; path = Libraries/libGTM_KVO.a; sourceTree = "<group>"; };
+		1049BCDDA3DB8121919048F1620C2876 /* libGTM_AddressBook.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_AddressBook.a; path = Libraries/libGTM_AddressBook.a; sourceTree = "<group>"; };
+		1112D71DDBB22599B79C1EFDA0BAF572 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		130ABDD2D0CE2B35C9B53AD94E42883E /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
+		146EAA3024FC83667028EB72EB4A291F /* LGSideMenuController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LGSideMenuController.xcconfig; sourceTree = "<group>"; };
+		15E25C5FE62160CF89B88D836890ABE1 /* libGTM_NSScannerJSON.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_NSScannerJSON.a; path = Libraries/libGTM_NSScannerJSON.a; sourceTree = "<group>"; };
+		168F2B1623E31E9CCDC99ED8D0675723 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		170A9B0970DBE268E249F74BF9931BB4 /* Pods_Connect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Connect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		179ABBAD4FA28117BB75BE9D0EE8E51A /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = AFNetworking/AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		1A5AEAFEDB7BF0756D614DCA592D203B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		1B23B64813CB47D761DDE14213941F86 /* JTSlideShadowAnimation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTSlideShadowAnimation-prefix.pch"; sourceTree = "<group>"; };
 		1B56E38E7C85FE665C382C27A204D964 /* Pods-Connect-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Connect-dummy.m"; sourceTree = "<group>"; };
+		1C81227D5F6CF1FC4A06AD6A625B2F5D /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		1CD60587756A6F81921CC5CD8081E7AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		1EB4144DAF100DF4BFCD1F982D55F36F /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		1EC0394112C5F46429A44796AEA51005 /* JTSlideShadowAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JTSlideShadowAnimation.m; path = JTSlideShadowAnimation/JTSlideShadowAnimation.m; sourceTree = "<group>"; };
 		1FBF0D543A42D82BB4A803340A064E7D /* Pods-Connect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Connect.release.xcconfig"; sourceTree = "<group>"; };
-		23B3C2F7A60189AA38D256A0120B8730 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		2F4A426DA7B9B3EE1073051828F4E102 /* DKCircleButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DKCircleButton.modulemap; sourceTree = "<group>"; };
-		3F5A68A1022ED8A1487EE673B0ED2D58 /* JTSlideShadowAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JTSlideShadowAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B399897489B9C18C48EB8561A14B139 /* LGSideMenuController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LGSideMenuController-dummy.m"; sourceTree = "<group>"; };
-		55B3C84AB880192730E98C2EF1D9B5E7 /* SDevCircleButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDevCircleButton-prefix.pch"; sourceTree = "<group>"; };
-		56A888BBA5CB7B72BD015DA9DF5E4C98 /* JTSlideShadowAnimation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JTSlideShadowAnimation.modulemap; sourceTree = "<group>"; };
+		219575866953F1B07C1A3885E7C53D54 /* DKCircleButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DKCircleButton-dummy.m"; sourceTree = "<group>"; };
+		26B098E6533CF20A3F5784E545855644 /* libGTM_GTMURLBuilder.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_GTMURLBuilder.a; path = Libraries/libGTM_GTMURLBuilder.a; sourceTree = "<group>"; };
+		26DC9503D35EB65CB9362B0371B07B03 /* libGTM_StringEncoding.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_StringEncoding.a; path = Libraries/libGTM_StringEncoding.a; sourceTree = "<group>"; };
+		2834834032871B4813E4D5A55D426E55 /* LGSideMenuController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LGSideMenuController-prefix.pch"; sourceTree = "<group>"; };
+		2E741B3B9693BA73CB168785D751B113 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31DA7AB6EE3C9EF364A467B126498A9F /* DKCircleButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DKCircleButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		348C8CC272EF1F5BBF0C8423AD47442B /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		37C565E368BAC6513A7555A20E687CE3 /* libGTM_SystemVersion.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_SystemVersion.a; path = Libraries/libGTM_SystemVersion.a; sourceTree = "<group>"; };
+		3A170194B7F7CC94770C8299E3048AEC /* OpenWeatherMapAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OpenWeatherMapAPI-dummy.m"; sourceTree = "<group>"; };
+		3B5E930985287396750517ADD53829A1 /* GMRConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMRConfiguration.h; path = Headers/GGLCore/Public/GMRConfiguration.h; sourceTree = "<group>"; };
+		3B6840C8128CE8105AC4EF977007877F /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CE0F226B07A5F48B0952E4DBA762357 /* LGSideMenuController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LGSideMenuController.modulemap; sourceTree = "<group>"; };
+		4877A2A0A157366181B3C98D4ADCB72B /* Analytics-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Analytics-Module.h"; path = "Headers/ModuleHeaders/Analytics-Module.h"; sourceTree = "<group>"; };
+		4BF00C103B801F88580341AD9ABC2830 /* OpenWeatherMapAPI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OpenWeatherMapAPI.xcconfig; sourceTree = "<group>"; };
+		4C2820D77F15C62AFC9CC5110EB96835 /* SDevCircleButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SDevCircleButton.modulemap; sourceTree = "<group>"; };
+		4E148994CC98B4A4F0D80CC1CC592DCC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FC358AD6CD3EE329458CA3CFBC5B8A5 /* DZNSegmentedControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZNSegmentedControl.xcconfig; sourceTree = "<group>"; };
+		5020CD8298105807293C28F32DFB5DE2 /* DZNSegmentedControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DZNSegmentedControl.modulemap; sourceTree = "<group>"; };
+		50CDB6F845630E3AFACFB23AD43B6E35 /* JTSlideShadowAnimation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTSlideShadowAnimation-umbrella.h"; sourceTree = "<group>"; };
+		50F0CB847DA4E4DB08C0A3DB4164F34B /* AFHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = AFNetworking/AFHTTPClient.h; sourceTree = "<group>"; };
+		51A625F5C0D40938310A46CC3942B4FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5211E526124C2491693782BD115952D6 /* AdMob-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AdMob-Module.h"; path = "Headers/ModuleHeaders/AdMob-Module.h"; sourceTree = "<group>"; };
+		544F5B821363BA8F39E9F074FD571479 /* DKCircleButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DKCircleButton.m; path = DKCircleButton/DKCircleButton.m; sourceTree = "<group>"; };
+		56261C029E7EC17DF0C9298D6CC9AC82 /* libGTM_Regex.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_Regex.a; path = Libraries/libGTM_Regex.a; sourceTree = "<group>"; };
+		590C315E4A5A413F85576BDC08F6684F /* CloudMessaging-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CloudMessaging-Module.h"; path = "Headers/ModuleHeaders/CloudMessaging-Module.h"; sourceTree = "<group>"; };
+		5BE86A8DF07F38FDD5444036DADF5B0E /* JTSlideShadowAnimation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTSlideShadowAnimation.xcconfig; sourceTree = "<group>"; };
+		5CFC8D6312DD7BBD7FB4CFB2B3F52EF9 /* DKCircleButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DKCircleButton.h; path = DKCircleButton/DKCircleButton.h; sourceTree = "<group>"; };
+		5D79B7C039D147DEA85214836AAE436E /* SDevCircleButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SDevCircleButton.swift; path = Classes/SDevCircleButton.swift; sourceTree = "<group>"; };
+		5E0ABF2EDBB66AFFFB6DA2A478DF76D5 /* libGTM_core.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_core.a; path = Libraries/libGTM_core.a; sourceTree = "<group>"; };
+		5F3B6E9F4DB9E1D3B838AF0FD536E3B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F7CDD2FB38DF958399F0FEFBCF6B25A /* Pods-Connect.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Connect.modulemap"; sourceTree = "<group>"; };
-		61B23D727532002D01D03ABA2AD1FF19 /* LGSideMenuController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LGSideMenuController-prefix.pch"; sourceTree = "<group>"; };
-		6567C9F7C6C3EF232F1D5CFBBA7909E3 /* DKCircleButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DKCircleButton.m; path = DKCircleButton/DKCircleButton.m; sourceTree = "<group>"; };
-		6AC9427EA7AFD2C5FC0973C0849808F4 /* JTSlideShadowAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JTSlideShadowAnimation.h; path = JTSlideShadowAnimation/JTSlideShadowAnimation.h; sourceTree = "<group>"; };
-		6D0D8FD843C11AA852ABA31EC940EAC4 /* JTSlideShadowAnimation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTSlideShadowAnimation-prefix.pch"; sourceTree = "<group>"; };
-		6F12069169C839A1221D00014C40FDD9 /* JTSlideShadowAnimation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTSlideShadowAnimation.xcconfig; sourceTree = "<group>"; };
-		7A95759D1398A05A88F1F850460D7E5E /* SDevCircleButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SDevCircleButton.swift; path = Classes/SDevCircleButton.swift; sourceTree = "<group>"; };
-		7C16C4C03B38373132F82072A105B7EA /* LGSideMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LGSideMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F79ACD206D7284CF469DA6B24AFACE9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		80667194FE7C4654E4C2BF87511E85B7 /* LGSideMenuController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LGSideMenuController-umbrella.h"; sourceTree = "<group>"; };
-		88F9CF4447B32EC6F1D1CB123BA88753 /* SDevCircleButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDevCircleButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AF7140DD462B3CDD362130FCFE60BDA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60364B763DDB8237675B03C941383735 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageRequestOperation.m; path = AFNetworking/AFImageRequestOperation.m; sourceTree = "<group>"; };
+		606A03A8E746ED94F9E4A5EA2B2875C1 /* DKCircleButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DKCircleButton.xcconfig; sourceTree = "<group>"; };
+		620623D4B61F1F51DEF7CC54586E5D7E /* DKCircleButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DKCircleButton-umbrella.h"; sourceTree = "<group>"; };
+		668D17A575F6BE3AB3093D003162EDE0 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		6720592E09FEB0CBA39C84C2FFB723ED /* AFImageRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageRequestOperation.h; path = AFNetworking/AFImageRequestOperation.h; sourceTree = "<group>"; };
+		692474FC44C85FFBD781A25A7C68B5E0 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFPropertyListRequestOperation.h; path = AFNetworking/AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		70DBE457590941E27C2879228E792583 /* GGLConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLConfiguration.h; path = Headers/GGLCore/Public/GGLConfiguration.h; sourceTree = "<group>"; };
+		72CD91A9F5BCBFDB73E2A94BDE141831 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		78710065920A64EEEB0612B3B1417878 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		79A71C65BACF5A00ACFF2B38B16C7B29 /* DZNSegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DZNSegmentedControl.h; path = Source/DZNSegmentedControl.h; sourceTree = "<group>"; };
+		7A3BC7FA3F93D8004A01A5D9A06D6069 /* SDevCircleButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDevCircleButton-umbrella.h"; sourceTree = "<group>"; };
+		7B021C3B84DC9B545B3BE48F8E448E9A /* libGTMStackTrace.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTMStackTrace.a; path = Libraries/libGTMStackTrace.a; sourceTree = "<group>"; };
+		7BDA06EE86FE654FC8AC945E323F314B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C727E60EBC226E4C5479F9785509134 /* AppInvite-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AppInvite-Module.h"; path = "Headers/ModuleHeaders/AppInvite-Module.h"; sourceTree = "<group>"; };
+		80418513F524E9CD72A718B3A5E4EBDD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8185A1167E8163405283A7D01BB10E53 /* JTSlideShadowAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JTSlideShadowAnimation.h; path = JTSlideShadowAnimation/JTSlideShadowAnimation.h; sourceTree = "<group>"; };
+		81C5753B658588517A95D25664363460 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		828D63CB4575131D36BFD1940FE5A814 /* libProtocolBuffers.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libProtocolBuffers.a; path = Libraries/libProtocolBuffers.a; sourceTree = "<group>"; };
+		828E371067107DC02486908E232343A6 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = AFNetworking/AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		857A6F0ACD2997371C439ED1E5958CB5 /* Core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Core.h; path = Headers/GGLCore/Public/Core.h; sourceTree = "<group>"; };
+		885014D57DDF3379CE20D740634B0011 /* libGSDK_Overload.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGSDK_Overload.a; path = Libraries/libGSDK_Overload.a; sourceTree = "<group>"; };
+		88AB89715FC0A42C988F63723F5BA12E /* JTSlideShadowAnimation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTSlideShadowAnimation-dummy.m"; sourceTree = "<group>"; };
+		89D1FF89DDFFDB94D9A763B6B1F5F1EE /* libGTM_NSDictionary+URLArguments.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libGTM_NSDictionary+URLArguments.a"; path = "Libraries/libGTM_NSDictionary+URLArguments.a"; sourceTree = "<group>"; };
+		8C9625EC44E25DA4DB64A2EAD7634A47 /* DZNSegmentedControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DZNSegmentedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC2CEEAF8D4DE9A297FEE978B2E9FC4 /* OpenWeatherMapAPI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OpenWeatherMapAPI-prefix.pch"; sourceTree = "<group>"; };
+		8FB646C6D96CC9E032895873C464F166 /* JTSlideShadowAnimation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JTSlideShadowAnimation.modulemap; sourceTree = "<group>"; };
+		90AF8B5AFB949D93FBABDC3E47EF7195 /* GGLContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLContext.h; path = Headers/GGLCore/Public/GGLContext.h; sourceTree = "<group>"; };
+		91D8D97B5257918B1763840ED62A379D /* libGTM_NSStringHTML.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_NSStringHTML.a; path = Libraries/libGTM_NSStringHTML.a; sourceTree = "<group>"; };
+		9371EC3AD8EA2C66B5CB6010B852231D /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		959243E3F45C717EA419513B0A3CBEB4 /* Pods-Connect-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Connect-acknowledgements.markdown"; sourceTree = "<group>"; };
-		95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		97987D5F181C1546818E8CDE224F3E30 /* DKCircleButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DKCircleButton-umbrella.h"; sourceTree = "<group>"; };
-		979BB2527A034BCB639D0FDA369A55BB /* LGSideMenuController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LGSideMenuController.xcconfig; sourceTree = "<group>"; };
+		985F06C064F45D27B223CAEB1574F65E /* LGSideMenuController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuController.m; path = LGSideMenuController/LGSideMenuController.m; sourceTree = "<group>"; };
+		986C43BED57C5F1941EE2AB29C417ADA /* libGTM_NSStringXML.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_NSStringXML.a; path = Libraries/libGTM_NSStringXML.a; sourceTree = "<group>"; };
+		99D8F9ACDB47E07969B35FA8DDA1F54C /* LGSideMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LGSideMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DAE22D7ED6FF35B7452957A73B597BA /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		9ECAA6EDBA8ECF63491AD88F60C5349D /* LGSideMenuController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuController.h; path = LGSideMenuController/LGSideMenuController.h; sourceTree = "<group>"; };
 		A035BD2E57E64C9F9B894E1D7786E6B5 /* Pods-Connect-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Connect-acknowledgements.plist"; sourceTree = "<group>"; };
-		A2925E7406E9E486EB6CB7C8E57F55DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A21E64F36D93EBA6C4D404848F0FA1CA /* LGSideMenuController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LGSideMenuController-dummy.m"; sourceTree = "<group>"; };
+		A22E596A75267CB2C694F815AB7847A8 /* SDevCircleButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDevCircleButton-prefix.pch"; sourceTree = "<group>"; };
+		A56FDDB7CC94B8F1F7FA7910A9E60EBE /* libGTM_RoundedRectPath.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_RoundedRectPath.a; path = Libraries/libGTM_RoundedRectPath.a; sourceTree = "<group>"; };
+		A766A5FF23897F47B1771B18D875E8E6 /* OWMWeatherAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OWMWeatherAPI.h; path = OpenWeatherMapAPI/OpenWeatherMapAPI/OWMWeatherAPI.h; sourceTree = "<group>"; };
+		AB99295FC591D4C28F5BA25455FF4812 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		ABAFCBF4EB15B16BFF2224E39E7EA7B3 /* OpenWeatherMapAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OpenWeatherMapAPI-umbrella.h"; sourceTree = "<group>"; };
+		AD42BD66FC79490BEB62281517D559AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AE3C869EFCEF7D91E8D9C7A1FEAA2969 /* OpenWeatherMapAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenWeatherMapAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF163BB2C94B8A566B9DF8195A9183DF /* DZNSegmentedControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNSegmentedControl-umbrella.h"; sourceTree = "<group>"; };
+		AFC607B4AEF374E03573390FE5C4F44C /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		B0026533073FE340ECEA2BBB1E1D2083 /* LGSideMenuController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LGSideMenuController-umbrella.h"; sourceTree = "<group>"; };
+		B28B0FD3C28501DD4D3BBAAC1472275D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6A80805A40CA5A0DC9463996C0D68A0 /* GGLErrorCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLErrorCode.h; path = Headers/GGLCore/Public/GGLErrorCode.h; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C0C0F9B1FB167D581D3B22ABE11B3910 /* DKCircleButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DKCircleButton.xcconfig; sourceTree = "<group>"; };
-		C25A67267B5E45DD175F5F7EB865229F /* Pods_Connect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Connect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4E940821C4FD7BE00820C1C /* MenuHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuHeaderCell.swift; sourceTree = "<group>"; };
+		BC9611D0E48C3803BB83983BD13A784D /* DKCircleButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DKCircleButton.modulemap; sourceTree = "<group>"; };
+		BD710680D72A2117C60AFBA5A2AA11C4 /* DZNSegmentedControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNSegmentedControl-prefix.pch"; sourceTree = "<group>"; };
+		C2F94540F38263425B0EEF8932DD0471 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		C5BB7BE2743AB53E70A17396DF000609 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFPropertyListRequestOperation.m; path = AFNetworking/AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
 		C86D5CF72106CB3DF7148F1A24C3AD70 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CDED7EDF0556FCB151321BD8891EED6B /* DKCircleButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DKCircleButton-prefix.pch"; sourceTree = "<group>"; };
-		D13A3C1326CC4439FC4781D5DC749C66 /* SDevCircleButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDevCircleButton-dummy.m"; sourceTree = "<group>"; };
-		D145B34269C05DD37C14F9DF77EB6630 /* JTSlideShadowAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JTSlideShadowAnimation.m; path = JTSlideShadowAnimation/JTSlideShadowAnimation.m; sourceTree = "<group>"; };
-		D2488CEE35BC1ABE8A38B68D0003335D /* LGSideMenuController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuController.m; path = LGSideMenuController/LGSideMenuController.m; sourceTree = "<group>"; };
-		DE9E14C759ACCD310E09C5D95834AB5F /* SDevCircleButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDevCircleButton-umbrella.h"; sourceTree = "<group>"; };
-		DEE939019B4F4CDEFED6462FDA777E6C /* JTSlideShadowAnimation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTSlideShadowAnimation-dummy.m"; sourceTree = "<group>"; };
+		C9014C7C72E2031E054127F589615E9B /* libGTM_UIFont+LineHeight.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libGTM_UIFont+LineHeight.a"; path = "Libraries/libGTM_UIFont+LineHeight.a"; sourceTree = "<group>"; };
+		C94CEBDCECF2CC8A5D985F5137ACCB3D /* UIScrollView+DZNSegmentedControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+DZNSegmentedControl.m"; path = "Source/UIScrollView+DZNSegmentedControl.m"; sourceTree = "<group>"; };
+		CF71014FB4ECD5E894830A62A6B8418E /* DKCircleButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DKCircleButton-prefix.pch"; sourceTree = "<group>"; };
+		D07CD3C1329ADA200A820C77A12D41C9 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5548076CCA89C87F854137C5EF358CA /* libGTM_iPhone.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_iPhone.a; path = Libraries/libGTM_iPhone.a; sourceTree = "<group>"; };
+		D7858E74D5F7C6E5E34CB36EFB27DDCB /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFJSONRequestOperation.h; path = AFNetworking/AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		DD3F5F6395FDE303B8A92BFBF2C3BB27 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE97EE8A4AFCC3929E4B5273747FC1A4 /* Core-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Core-Module.h"; path = "Headers/ModuleHeaders/Core-Module.h"; sourceTree = "<group>"; };
+		E22ED41BE7EB1B30C126F489F0A091A4 /* libGGLCore.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGGLCore.a; path = Libraries/libGGLCore.a; sourceTree = "<group>"; };
+		E4B0BCB3C3DB5D09EB8A7C5EE10FABD9 /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AFNetworking.modulemap; sourceTree = "<group>"; };
 		E74BF90012AF23FCB834F5B307223FFE /* Pods-Connect-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Connect-resources.sh"; sourceTree = "<group>"; };
-		F012B3CE303A1F313362A1E6D9901002 /* DKCircleButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DKCircleButton-dummy.m"; sourceTree = "<group>"; };
+		E75060F8374FFF9FABEDC12A6693B49C /* libGTMSessionFetcher_core.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTMSessionFetcher_core.a; path = Libraries/libGTMSessionFetcher_core.a; sourceTree = "<group>"; };
+		E7B3D67C3C14D85C9FE12E97ABDCFB76 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFJSONRequestOperation.m; path = AFNetworking/AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		EA63342EE5E0B454422586678D1B594D /* SDevCircleButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDevCircleButton.xcconfig; sourceTree = "<group>"; };
+		EA87375A820C1EAE4F02A5434EB6618F /* libGTM_NSData+zlib.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libGTM_NSData+zlib.a"; path = "Libraries/libGTM_NSData+zlib.a"; sourceTree = "<group>"; };
+		EB2398C49D9C4CA0A2CA302C75B87A2C /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		EE67A63A363C4C918FFE99396E5001DB /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		F1623AFFC36B7BB4A9B5487773DDF6D2 /* libGTMSessionFetcher_full.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTMSessionFetcher_full.a; path = Libraries/libGTMSessionFetcher_full.a; sourceTree = "<group>"; };
+		F2BBA9932D7BAF9BC146B2C42F2C97F0 /* SDevCircleButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDevCircleButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3939CB3316E81E955882962ECAAAB88 /* Pods-Connect-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Connect-umbrella.h"; sourceTree = "<group>"; };
-		F4B1C463ACBD0087985525C92044F47C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8824ECA2C1296A9C12DDE95C76FA62D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F46BFE1CF9FD7E7236554FDDDB3D3D56 /* OpenWeatherMapAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = OpenWeatherMapAPI.modulemap; sourceTree = "<group>"; };
+		F62A117B5370DF8DD55DA65A28975492 /* OWMWeatherAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OWMWeatherAPI.m; path = OpenWeatherMapAPI/OpenWeatherMapAPI/OWMWeatherAPI.m; sourceTree = "<group>"; };
+		F664983913E53CA218460ABBB43C8AD3 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		F7C483548C6F19851DA1581D6BCF8BB1 /* SDevCircleButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDevCircleButton-dummy.m"; sourceTree = "<group>"; };
+		F902FE4CF03808C42FDB606CE10B72F0 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		F9FF91ACAF19C2D3225D0CEC6447DF83 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		FADC3455E679D4A4898FB8681D1E3CB6 /* SignIn-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SignIn-Module.h"; path = "Headers/ModuleHeaders/SignIn-Module.h"; sourceTree = "<group>"; };
+		FB22E90B9BC1B5A7F6A8A17B5BC5CCF0 /* libGTM_DebugUtils.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_DebugUtils.a; path = Libraries/libGTM_DebugUtils.a; sourceTree = "<group>"; };
+		FD75FE81847F5A2B2AC69352B9DDB680 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = AFNetworking/AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		FE0BDACA1BF6544B9D4E4ED2615649DA /* DZNSegmentedControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DZNSegmentedControl.m; path = Source/DZNSegmentedControl.m; sourceTree = "<group>"; };
+		FE0DE2A527957053E9EA30FCF16A2DBD /* AFHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = AFNetworking/AFHTTPClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		09B6E2554A45A5E6E43848209A6E5251 /* Frameworks */ = {
+		07A8F9542CB8A866B7B2DBF19D30EC9E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F22152893CBA8B3DA5778E29E8758BDA /* Foundation.framework in Frameworks */,
+				9B2A3113BBD4C9F2282966A32AB71740 /* AFNetworking.framework in Frameworks */,
+				C65BC443666409F3FC2FA21F507000BF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +307,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C723A5F707095293723EFBB312E4B12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093DF21B02E222ACBD84FDC1FD9516E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98434FA8327676B71F776D7AC1FD4833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2715D53C94A317648CA4EA6D61A7CE2 /* Foundation.framework in Frameworks */,
+				B7948FC7E1D9D186CC3F7D6F21C6CBA1 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0299215E42C1A4F3216C4BCD1F7EE33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17D77EAF6E88299C492751FAAEB4A1A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D45CE6B76B79DF58056603B5D2998621 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE051FE58995C6B427FAFE41CD9F0DD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D51CAEEBC010278098E81B501D8979A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,11 +348,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6A8FE606AF72E9F3F22BAF3291AAB9D /* Frameworks */ = {
+		E022376BE717028ABBD823FDF1001EC5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3C2DDB3550B988F213E6884EE787C1F /* Foundation.framework in Frameworks */,
+				8A7F64E38C918BD8DDA8E509B9B95A43 /* CoreGraphics.framework in Frameworks */,
+				C14A4C963B7F4725A1B0B292822B813B /* Foundation.framework in Frameworks */,
+				CF6948A1EAF8ACC086F5B738294EE2C7 /* MobileCoreServices.framework in Frameworks */,
+				CD6D6FC15AEF5AC7DB82955041693F21 /* Security.framework in Frameworks */,
+				00D551902881BAEAC3A8CFEDAA7D2971 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,62 +373,131 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C0928383EC504FF9B6749B533436739 /* LGSideMenuController */ = {
+		09AC8A9B723A2A8EB31B038867FFB60D /* Google */ = {
 			isa = PBXGroup;
 			children = (
-				1932A89C9FDE9FB90449831C461E1638 /* LGSideMenuController.h */,
-				D2488CEE35BC1ABE8A38B68D0003335D /* LGSideMenuController.m */,
-				7BE6E1DD2456D1CC2A658B1D411EAEC5 /* Support Files */,
+				433CDEFC692D7EC21CBF0DFFC740C64E /* Core */,
 			);
-			path = LGSideMenuController;
+			path = Google;
 			sourceTree = "<group>";
 		};
-		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+		1705D04DF3CBC6690689C0F5CA7E5F26 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E35B3E289DB984DA75A774080D293670 /* iOS */,
+				E22ED41BE7EB1B30C126F489F0A091A4 /* libGGLCore.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		33693B252971AC1126CFB3FABDEBAED2 /* Support Files */ = {
+		21CD7E7A600A48B8F7DDB0464E7BEFFB /* OpenWeatherMapAPI */ = {
 			isa = PBXGroup;
 			children = (
-				2F4A426DA7B9B3EE1073051828F4E102 /* DKCircleButton.modulemap */,
-				C0C0F9B1FB167D581D3B22ABE11B3910 /* DKCircleButton.xcconfig */,
-				F012B3CE303A1F313362A1E6D9901002 /* DKCircleButton-dummy.m */,
-				CDED7EDF0556FCB151321BD8891EED6B /* DKCircleButton-prefix.pch */,
-				97987D5F181C1546818E8CDE224F3E30 /* DKCircleButton-umbrella.h */,
-				8AF7140DD462B3CDD362130FCFE60BDA /* Info.plist */,
+				A766A5FF23897F47B1771B18D875E8E6 /* OWMWeatherAPI.h */,
+				F62A117B5370DF8DD55DA65A28975492 /* OWMWeatherAPI.m */,
+				80D3DA254A2290D064C0B31F0DC75073 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/DKCircleButton";
+			path = OpenWeatherMapAPI;
 			sourceTree = "<group>";
 		};
-		34B5A45F1710E43CBC3305368A2FA286 /* Support Files */ = {
+		2234926EEA80145DBA96D49B4C180BCA /* JTSlideShadowAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				F8824ECA2C1296A9C12DDE95C76FA62D /* Info.plist */,
-				56A888BBA5CB7B72BD015DA9DF5E4C98 /* JTSlideShadowAnimation.modulemap */,
-				6F12069169C839A1221D00014C40FDD9 /* JTSlideShadowAnimation.xcconfig */,
-				DEE939019B4F4CDEFED6462FDA777E6C /* JTSlideShadowAnimation-dummy.m */,
-				6D0D8FD843C11AA852ABA31EC940EAC4 /* JTSlideShadowAnimation-prefix.pch */,
-				0A0DFEE30D16855B70A1253ABF64772C /* JTSlideShadowAnimation-umbrella.h */,
+				8185A1167E8163405283A7D01BB10E53 /* JTSlideShadowAnimation.h */,
+				1EC0394112C5F46429A44796AEA51005 /* JTSlideShadowAnimation.m */,
+				6370962A7B9536CABBE0FB892192CA71 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/JTSlideShadowAnimation";
+			path = JTSlideShadowAnimation;
 			sourceTree = "<group>";
 		};
-		3F09FE70340306B00E3D44707EE550E7 /* Products */ = {
+		23F35819F1715D13DB685BB2AFE08E30 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				19781F2FD2549D80D1D128C9C25369FD /* DKCircleButton.framework */,
-				3F5A68A1022ED8A1487EE673B0ED2D58 /* JTSlideShadowAnimation.framework */,
-				7C16C4C03B38373132F82072A105B7EA /* LGSideMenuController.framework */,
-				C25A67267B5E45DD175F5F7EB865229F /* Pods_Connect.framework */,
-				88F9CF4447B32EC6F1D1CB123BA88753 /* SDevCircleButton.framework */,
+				F902FE4CF03808C42FDB606CE10B72F0 /* SwiftyJSON.swift */,
+				2BE9EEC6AADAD1F06BA4AC5E123B0EBD /* Support Files */,
 			);
-			name = Products;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		2BE9EEC6AADAD1F06BA4AC5E123B0EBD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				168F2B1623E31E9CCDC99ED8D0675723 /* Info.plist */,
+				9371EC3AD8EA2C66B5CB6010B852231D /* SwiftyJSON.modulemap */,
+				C2F94540F38263425B0EEF8932DD0471 /* SwiftyJSON.xcconfig */,
+				9DAE22D7ED6FF35B7452957A73B597BA /* SwiftyJSON-dummy.m */,
+				F9FF91ACAF19C2D3225D0CEC6447DF83 /* SwiftyJSON-prefix.pch */,
+				089DF09C3065794614C7ED92102ADFDB /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		31A6C6B0482DD5B2DB4D1A53A8854568 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				3F267CCB5D3CA12B3000C4CE502BF3D8 /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		374F4DBC77BDD29A5A4425D82D4F3598 /* SDevCircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				5D79B7C039D147DEA85214836AAE436E /* SDevCircleButton.swift */,
+				A5DDEB8465E54A597ACE5F437B98FAC6 /* Support Files */,
+			);
+			path = SDevCircleButton;
+			sourceTree = "<group>";
+		};
+		3913085AF9539293A1DE94C9A1661DF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				828D63CB4575131D36BFD1940FE5A814 /* libProtocolBuffers.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F267CCB5D3CA12B3000C4CE502BF3D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1049BCDDA3DB8121919048F1620C2876 /* libGTM_AddressBook.a */,
+				5E0ABF2EDBB66AFFFB6DA2A478DF76D5 /* libGTM_core.a */,
+				FB22E90B9BC1B5A7F6A8A17B5BC5CCF0 /* libGTM_DebugUtils.a */,
+				26B098E6533CF20A3F5784E545855644 /* libGTM_GTMURLBuilder.a */,
+				D5548076CCA89C87F854137C5EF358CA /* libGTM_iPhone.a */,
+				0F96A82F18069D5537DA1C7FF7CC1DFB /* libGTM_KVO.a */,
+				EA87375A820C1EAE4F02A5434EB6618F /* libGTM_NSData+zlib.a */,
+				89D1FF89DDFFDB94D9A763B6B1F5F1EE /* libGTM_NSDictionary+URLArguments.a */,
+				15E25C5FE62160CF89B88D836890ABE1 /* libGTM_NSScannerJSON.a */,
+				91D8D97B5257918B1763840ED62A379D /* libGTM_NSStringHTML.a */,
+				986C43BED57C5F1941EE2AB29C417ADA /* libGTM_NSStringXML.a */,
+				56261C029E7EC17DF0C9298D6CC9AC82 /* libGTM_Regex.a */,
+				A56FDDB7CC94B8F1F7FA7910A9E60EBE /* libGTM_RoundedRectPath.a */,
+				26DC9503D35EB65CB9362B0371B07B03 /* libGTM_StringEncoding.a */,
+				37C565E368BAC6513A7555A20E687CE3 /* libGTM_SystemVersion.a */,
+				C9014C7C72E2031E054127F589615E9B /* libGTM_UIFont+LineHeight.a */,
+				7B021C3B84DC9B545B3BE48F8E448E9A /* libGTMStackTrace.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		433CDEFC692D7EC21CBF0DFFC740C64E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5211E526124C2491693782BD115952D6 /* AdMob-Module.h */,
+				4877A2A0A157366181B3C98D4ADCB72B /* Analytics-Module.h */,
+				7C727E60EBC226E4C5479F9785509134 /* AppInvite-Module.h */,
+				590C315E4A5A413F85576BDC08F6684F /* CloudMessaging-Module.h */,
+				857A6F0ACD2997371C439ED1E5958CB5 /* Core.h */,
+				DE97EE8A4AFCC3929E4B5273747FC1A4 /* Core-Module.h */,
+				70DBE457590941E27C2879228E792583 /* GGLConfiguration.h */,
+				90AF8B5AFB949D93FBABDC3E47EF7195 /* GGLContext.h */,
+				B6A80805A40CA5A0DC9463996C0D68A0 /* GGLErrorCode.h */,
+				3B5E930985287396750517ADD53829A1 /* GMRConfiguration.h */,
+				FADC3455E679D4A4898FB8681D1E3CB6 /* SignIn-Module.h */,
+				1705D04DF3CBC6690689C0F5CA7E5F26 /* Frameworks */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		46F254EBF5165D37420AE15563026B8A /* Targets Support Files */ = {
@@ -231,53 +508,160 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		5CB2191EEA15F7A61FE144FF720AF638 /* Support Files */ = {
+		4A1FAC9C3DF585A62F6CAE1DF43FC27F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F4B1C463ACBD0087985525C92044F47C /* Info.plist */,
-				19C581EF47D87C65E42FBF2D0A554166 /* SDevCircleButton.modulemap */,
-				13182FB10B1C9707BEDB8906B1945C92 /* SDevCircleButton.xcconfig */,
-				D13A3C1326CC4439FC4781D5DC749C66 /* SDevCircleButton-dummy.m */,
-				55B3C84AB880192730E98C2EF1D9B5E7 /* SDevCircleButton-prefix.pch */,
-				DE9E14C759ACCD310E09C5D95834AB5F /* SDevCircleButton-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SDevCircleButton";
-			sourceTree = "<group>";
-		};
-		7BE6E1DD2456D1CC2A658B1D411EAEC5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A2925E7406E9E486EB6CB7C8E57F55DA /* Info.plist */,
-				13DB34EDF6FE706621F8B9EE58923415 /* LGSideMenuController.modulemap */,
-				979BB2527A034BCB639D0FDA369A55BB /* LGSideMenuController.xcconfig */,
-				4B399897489B9C18C48EB8561A14B139 /* LGSideMenuController-dummy.m */,
-				61B23D727532002D01D03ABA2AD1FF19 /* LGSideMenuController-prefix.pch */,
-				80667194FE7C4654E4C2BF87511E85B7 /* LGSideMenuController-umbrella.h */,
+				DD3F5F6395FDE303B8A92BFBF2C3BB27 /* Info.plist */,
+				3CE0F226B07A5F48B0952E4DBA762357 /* LGSideMenuController.modulemap */,
+				146EAA3024FC83667028EB72EB4A291F /* LGSideMenuController.xcconfig */,
+				A21E64F36D93EBA6C4D404848F0FA1CA /* LGSideMenuController-dummy.m */,
+				2834834032871B4813E4D5A55D426E55 /* LGSideMenuController-prefix.pch */,
+				B0026533073FE340ECEA2BBB1E1D2083 /* LGSideMenuController-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/LGSideMenuController";
 			sourceTree = "<group>";
 		};
+		4EA2257015897C7217D7D22750F01055 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC9611D0E48C3803BB83983BD13A784D /* DKCircleButton.modulemap */,
+				606A03A8E746ED94F9E4A5EA2B2875C1 /* DKCircleButton.xcconfig */,
+				219575866953F1B07C1A3885E7C53D54 /* DKCircleButton-dummy.m */,
+				CF71014FB4ECD5E894830A62A6B8418E /* DKCircleButton-prefix.pch */,
+				620623D4B61F1F51DEF7CC54586E5D7E /* DKCircleButton-umbrella.h */,
+				7BDA06EE86FE654FC8AC945E323F314B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DKCircleButton";
+			sourceTree = "<group>";
+		};
+		56EA72034F286BFBC1CD6617FAFAE0F2 /* LGSideMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				9ECAA6EDBA8ECF63491AD88F60C5349D /* LGSideMenuController.h */,
+				985F06C064F45D27B223CAEB1574F65E /* LGSideMenuController.m */,
+				4A1FAC9C3DF585A62F6CAE1DF43FC27F /* Support Files */,
+			);
+			path = LGSideMenuController;
+			sourceTree = "<group>";
+		};
+		6370962A7B9536CABBE0FB892192CA71 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F3B6E9F4DB9E1D3B838AF0FD536E3B7 /* Info.plist */,
+				8FB646C6D96CC9E032895873C464F166 /* JTSlideShadowAnimation.modulemap */,
+				5BE86A8DF07F38FDD5444036DADF5B0E /* JTSlideShadowAnimation.xcconfig */,
+				88AB89715FC0A42C988F63723F5BA12E /* JTSlideShadowAnimation-dummy.m */,
+				1B23B64813CB47D761DDE14213941F86 /* JTSlideShadowAnimation-prefix.pch */,
+				50CDB6F845630E3AFACFB23AD43B6E35 /* JTSlideShadowAnimation-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JTSlideShadowAnimation";
+			sourceTree = "<group>";
+		};
+		710A33B70B0DFCC29BF1252C2E70E31A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4B0BCB3C3DB5D09EB8A7C5EE10FABD9 /* AFNetworking.modulemap */,
+				EB2398C49D9C4CA0A2CA302C75B87A2C /* AFNetworking.xcconfig */,
+				F664983913E53CA218460ABBB43C8AD3 /* AFNetworking-dummy.m */,
+				78710065920A64EEEB0612B3B1417878 /* AFNetworking-prefix.pch */,
+				130ABDD2D0CE2B35C9B53AD94E42883E /* AFNetworking-umbrella.h */,
+				B28B0FD3C28501DD4D3BBAAC1472275D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		7D62B0E9F1F9A136CCB93852A270203F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D07CD3C1329ADA200A820C77A12D41C9 /* AFNetworking.framework */,
+				31DA7AB6EE3C9EF364A467B126498A9F /* DKCircleButton.framework */,
+				8C9625EC44E25DA4DB64A2EAD7634A47 /* DZNSegmentedControl.framework */,
+				0E69DB174D4EF78B565CFB6B69F9077F /* JTSlideShadowAnimation.framework */,
+				99D8F9ACDB47E07969B35FA8DDA1F54C /* LGSideMenuController.framework */,
+				AE3C869EFCEF7D91E8D9C7A1FEAA2969 /* OpenWeatherMapAPI.framework */,
+				170A9B0970DBE268E249F74BF9931BB4 /* Pods_Connect.framework */,
+				F2BBA9932D7BAF9BC146B2C42F2C97F0 /* SDevCircleButton.framework */,
+				3B6840C8128CE8105AC4EF977007877F /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				C4E940821C4FD7BE00820C1C /* MenuHeaderCell.swift */,
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				A778552621138511CF9BC9C3D17EB1C5 /* Pods */,
-				3F09FE70340306B00E3D44707EE550E7 /* Products */,
+				AD37EE3CE22F2D6A660B5BD65007E786 /* Frameworks */,
+				AA1BFECA9A9909B811E03648ACCECBFE /* Pods */,
+				7D62B0E9F1F9A136CCB93852A270203F /* Products */,
 				46F254EBF5165D37420AE15563026B8A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8D38BC03089F4315628F00841D637AA6 /* SDevCircleButton */ = {
+		80D3DA254A2290D064C0B31F0DC75073 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7A95759D1398A05A88F1F850460D7E5E /* SDevCircleButton.swift */,
-				5CB2191EEA15F7A61FE144FF720AF638 /* Support Files */,
+				4E148994CC98B4A4F0D80CC1CC592DCC /* Info.plist */,
+				F46BFE1CF9FD7E7236554FDDDB3D3D56 /* OpenWeatherMapAPI.modulemap */,
+				4BF00C103B801F88580341AD9ABC2830 /* OpenWeatherMapAPI.xcconfig */,
+				3A170194B7F7CC94770C8299E3048AEC /* OpenWeatherMapAPI-dummy.m */,
+				8EC2CEEAF8D4DE9A297FEE978B2E9FC4 /* OpenWeatherMapAPI-prefix.pch */,
+				ABAFCBF4EB15B16BFF2224E39E7EA7B3 /* OpenWeatherMapAPI-umbrella.h */,
 			);
-			path = SDevCircleButton;
+			name = "Support Files";
+			path = "../Target Support Files/OpenWeatherMapAPI";
+			sourceTree = "<group>";
+		};
+		8312FF09D7BFEDC878981F5B0A7829B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB99295FC591D4C28F5BA25455FF4812 /* GoogleMaps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BDFDCAD0E5776004A3B5E756B671343 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5020CD8298105807293C28F32DFB5DE2 /* DZNSegmentedControl.modulemap */,
+				4FC358AD6CD3EE329458CA3CFBC5B8A5 /* DZNSegmentedControl.xcconfig */,
+				05A0C0DA0443B031261FA738F1D76868 /* DZNSegmentedControl-dummy.m */,
+				BD710680D72A2117C60AFBA5A2AA11C4 /* DZNSegmentedControl-prefix.pch */,
+				AF163BB2C94B8A566B9DF8195A9183DF /* DZNSegmentedControl-umbrella.h */,
+				51A625F5C0D40938310A46CC3942B4FD /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DZNSegmentedControl";
+			sourceTree = "<group>";
+		};
+		8E357BE1D17390F6402D335F22DEDA74 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				50F0CB847DA4E4DB08C0A3DB4164F34B /* AFHTTPClient.h */,
+				FE0DE2A527957053E9EA30FCF16A2DBD /* AFHTTPClient.m */,
+				EE67A63A363C4C918FFE99396E5001DB /* AFHTTPRequestOperation.h */,
+				348C8CC272EF1F5BBF0C8423AD47442B /* AFHTTPRequestOperation.m */,
+				6720592E09FEB0CBA39C84C2FFB723ED /* AFImageRequestOperation.h */,
+				60364B763DDB8237675B03C941383735 /* AFImageRequestOperation.m */,
+				D7858E74D5F7C6E5E34CB36EFB27DDCB /* AFJSONRequestOperation.h */,
+				E7B3D67C3C14D85C9FE12E97ABDCFB76 /* AFJSONRequestOperation.m */,
+				FD75FE81847F5A2B2AC69352B9DDB680 /* AFNetworkActivityIndicatorManager.h */,
+				828E371067107DC02486908E232343A6 /* AFNetworkActivityIndicatorManager.m */,
+				81C5753B658588517A95D25664363460 /* AFNetworking.h */,
+				692474FC44C85FFBD781A25A7C68B5E0 /* AFPropertyListRequestOperation.h */,
+				C5BB7BE2743AB53E70A17396DF000609 /* AFPropertyListRequestOperation.m */,
+				02FF2ACAE745B5D4690DEB7E9FE88EA2 /* AFURLConnectionOperation.h */,
+				1C81227D5F6CF1FC4A06AD6A625B2F5D /* AFURLConnectionOperation.m */,
+				09E975A50F00163527B124A029DE76AE /* AFXMLRequestOperation.h */,
+				179ABBAD4FA28117BB75BE9D0EE8E51A /* AFXMLRequestOperation.m */,
+				668D17A575F6BE3AB3093D003162EDE0 /* UIImageView+AFNetworking.h */,
+				AFC607B4AEF374E03573390FE5C4F44C /* UIImageView+AFNetworking.m */,
+				710A33B70B0DFCC29BF1252C2E70E31A /* Support Files */,
+			);
+			path = AFNetworking;
 			sourceTree = "<group>";
 		};
 		916A6DD3265DAB27601C87C905D64151 /* Pods-Connect */ = {
@@ -298,45 +682,141 @@
 			path = "Target Support Files/Pods-Connect";
 			sourceTree = "<group>";
 		};
-		9A48B7282B3B4DA9AE14A2C675B0F9A5 /* JTSlideShadowAnimation */ = {
+		A5DDEB8465E54A597ACE5F437B98FAC6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6AC9427EA7AFD2C5FC0973C0849808F4 /* JTSlideShadowAnimation.h */,
-				D145B34269C05DD37C14F9DF77EB6630 /* JTSlideShadowAnimation.m */,
-				34B5A45F1710E43CBC3305368A2FA286 /* Support Files */,
+				2E741B3B9693BA73CB168785D751B113 /* Info.plist */,
+				4C2820D77F15C62AFC9CC5110EB96835 /* SDevCircleButton.modulemap */,
+				EA63342EE5E0B454422586678D1B594D /* SDevCircleButton.xcconfig */,
+				F7C483548C6F19851DA1581D6BCF8BB1 /* SDevCircleButton-dummy.m */,
+				A22E596A75267CB2C694F815AB7847A8 /* SDevCircleButton-prefix.pch */,
+				7A3BC7FA3F93D8004A01A5D9A06D6069 /* SDevCircleButton-umbrella.h */,
 			);
-			path = JTSlideShadowAnimation;
+			name = "Support Files";
+			path = "../Target Support Files/SDevCircleButton";
 			sourceTree = "<group>";
 		};
-		9DFD403814A60C38C48E4C970673A4A6 /* DKCircleButton */ = {
+		AA1BFECA9A9909B811E03648ACCECBFE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				05EEC213E909AF34622F626918CB53FB /* DKCircleButton.h */,
-				6567C9F7C6C3EF232F1D5CFBBA7909E3 /* DKCircleButton.m */,
-				33693B252971AC1126CFB3FABDEBAED2 /* Support Files */,
-			);
-			path = DKCircleButton;
-			sourceTree = "<group>";
-		};
-		A778552621138511CF9BC9C3D17EB1C5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9DFD403814A60C38C48E4C970673A4A6 /* DKCircleButton */,
-				9A48B7282B3B4DA9AE14A2C675B0F9A5 /* JTSlideShadowAnimation */,
-				0C0928383EC504FF9B6749B533436739 /* LGSideMenuController */,
-				8D38BC03089F4315628F00841D637AA6 /* SDevCircleButton */,
+				8E357BE1D17390F6402D335F22DEDA74 /* AFNetworking */,
+				E3FD91DAC65AF8D20644D4A64583B4BA /* DKCircleButton */,
+				F33F30950A4D6A5DE236081772E18EC2 /* DZNSegmentedControl */,
+				09AC8A9B723A2A8EB31B038867FFB60D /* Google */,
+				DC466008B872739B3D66786E67638D6F /* GoogleInterchangeUtilities */,
+				B7193D81515120BC06675C93999D05D1 /* GoogleMaps */,
+				CF7AFA54C58B4779E4B3D167935B681A /* GoogleNetworkingUtilities */,
+				F85537B8F16288C3A7DDDE7857838A60 /* GoogleSymbolUtilities */,
+				31A6C6B0482DD5B2DB4D1A53A8854568 /* GoogleUtilities */,
+				2234926EEA80145DBA96D49B4C180BCA /* JTSlideShadowAnimation */,
+				56EA72034F286BFBC1CD6617FAFAE0F2 /* LGSideMenuController */,
+				21CD7E7A600A48B8F7DDB0464E7BEFFB /* OpenWeatherMapAPI */,
+				374F4DBC77BDD29A5A4425D82D4F3598 /* SDevCircleButton */,
+				23F35819F1715D13DB685BB2AFE08E30 /* SwiftyJSON */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		E35B3E289DB984DA75A774080D293670 /* iOS */ = {
+		AD37EE3CE22F2D6A660B5BD65007E786 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				23B3C2F7A60189AA38D256A0120B8730 /* CoreGraphics.framework */,
-				95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */,
-				7F79ACD206D7284CF469DA6B24AFACE9 /* UIKit.framework */,
+				040C09B94F19533FBD391278CB20185D /* AFNetworking.framework */,
+				D0034FB97E03A8A02ADD0384F432F848 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1B752CFCF65A5CBDA024F90A74BF3B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1EB4144DAF100DF4BFCD1F982D55F36F /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B3EABA53D6DAB4FDABFB20DE9B6B5517 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E75060F8374FFF9FABEDC12A6693B49C /* libGTMSessionFetcher_core.a */,
+				F1623AFFC36B7BB4A9B5487773DDF6D2 /* libGTMSessionFetcher_full.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7193D81515120BC06675C93999D05D1 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				8312FF09D7BFEDC878981F5B0A7829B7 /* Frameworks */,
+				B1B752CFCF65A5CBDA024F90A74BF3B2 /* Resources */,
+			);
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		BD2E77456A228FEED84F6F208580A82C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				885014D57DDF3379CE20D740634B0011 /* libGSDK_Overload.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF7AFA54C58B4779E4B3D167935B681A /* GoogleNetworkingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				B3EABA53D6DAB4FDABFB20DE9B6B5517 /* Frameworks */,
+			);
+			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+		D0034FB97E03A8A02ADD0384F432F848 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1CD60587756A6F81921CC5CD8081E7AE /* CoreGraphics.framework */,
+				AD42BD66FC79490BEB62281517D559AF /* Foundation.framework */,
+				1112D71DDBB22599B79C1EFDA0BAF572 /* MobileCoreServices.framework */,
+				1A5AEAFEDB7BF0756D614DCA592D203B /* Security.framework */,
+				72CD91A9F5BCBFDB73E2A94BDE141831 /* SystemConfiguration.framework */,
+				80418513F524E9CD72A718B3A5E4EBDD /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		DC466008B872739B3D66786E67638D6F /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				3913085AF9539293A1DE94C9A1661DF7 /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		E3FD91DAC65AF8D20644D4A64583B4BA /* DKCircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				5CFC8D6312DD7BBD7FB4CFB2B3F52EF9 /* DKCircleButton.h */,
+				544F5B821363BA8F39E9F074FD571479 /* DKCircleButton.m */,
+				4EA2257015897C7217D7D22750F01055 /* Support Files */,
+			);
+			path = DKCircleButton;
+			sourceTree = "<group>";
+		};
+		F33F30950A4D6A5DE236081772E18EC2 /* DZNSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				79A71C65BACF5A00ACFF2B38B16C7B29 /* DZNSegmentedControl.h */,
+				FE0BDACA1BF6544B9D4E4ED2615649DA /* DZNSegmentedControl.m */,
+				0339FF0BB7E7A2B7DE836FD31B7AB38B /* UIScrollView+DZNSegmentedControl.h */,
+				C94CEBDCECF2CC8A5D985F5137ACCB3D /* UIScrollView+DZNSegmentedControl.m */,
+				8BDFDCAD0E5776004A3B5E756B671343 /* Support Files */,
+			);
+			path = DZNSegmentedControl;
+			sourceTree = "<group>";
+		};
+		F85537B8F16288C3A7DDDE7857838A60 /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				BD2E77456A228FEED84F6F208580A82C /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +831,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		21CF567CD7DDD583F52552416EA22A73 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E00ED6335D0F493775C4246A81AD6B1 /* AFHTTPClient.h in Headers */,
+				CFF9225579D934869127F9D8531FAEED /* AFHTTPRequestOperation.h in Headers */,
+				0E4864732360399F85A1F8580B8761C3 /* AFImageRequestOperation.h in Headers */,
+				911F87600315B9373127CCEBF419F92F /* AFJSONRequestOperation.h in Headers */,
+				D11AD5008DA4CC1A426EE038464DC3FA /* AFNetworkActivityIndicatorManager.h in Headers */,
+				8A091CCDC256BD3826036ACC8E0C57E7 /* AFNetworking-umbrella.h in Headers */,
+				4052458729EF18158F1D4F605B5F1EB6 /* AFNetworking.h in Headers */,
+				9412A1A2A7A3314FC6879AACAC34DC82 /* AFPropertyListRequestOperation.h in Headers */,
+				60CFCAE0D8E68E042B69FEDA9D9D3E1A /* AFURLConnectionOperation.h in Headers */,
+				25A7E07DD6F8C1A2CB3ED418D3ECCF54 /* AFXMLRequestOperation.h in Headers */,
+				FC5C05DA3B60A1D1B95B10C66FB42474 /* UIImageView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		61446AA1ED2E9E1B810615A043B00DE0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -360,11 +858,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6A51D054291C89DF83A1D1E722AE869D /* Headers */ = {
+		6C421E04F1EF4E9FBE0540BEC60B9509 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C62EC9DF4F0511310DA7037FCB2B745 /* Pods-Connect-umbrella.h in Headers */,
+				7EEB4B3EA5FF86A921ED000E7FE3403F /* SDevCircleButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF48BB6C4B0E4C51DB4737F7ADC75F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A73FD8EEEB37BBE7B9C3193DCD1DD8FA /* OpenWeatherMapAPI-umbrella.h in Headers */,
+				4E27765ABA0DD96225F06C723687CCAB /* OWMWeatherAPI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,11 +884,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C47ADBF8FE545A1AF25979F8927F19D0 /* Headers */ = {
+		95FDBCC3141C93E36B30796412014846 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BB3395F7D8EE83C7935E959D887D28B /* SDevCircleButton-umbrella.h in Headers */,
+				09F4AED5C83B59284A1A8E44566A0C87 /* Pods-Connect-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C14AD3F8CF0274204E9EBEB61D0E0D87 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				786D6E252DB81AECA220877FB979613A /* DZNSegmentedControl-umbrella.h in Headers */,
+				16A9365E7CA88B885FCC968AFAFDBCE1 /* DZNSegmentedControl.h in Headers */,
+				354991AF2508B9E5DD521C96E5C59C51 /* UIScrollView+DZNSegmentedControl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E45C96B1010EE3C798A521F8FB7798EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8A364C0BFE09DD298D32DC69748523 /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,16 +927,16 @@
 			);
 			name = DKCircleButton;
 			productName = DKCircleButton;
-			productReference = 19781F2FD2549D80D1D128C9C25369FD /* DKCircleButton.framework */;
+			productReference = 31DA7AB6EE3C9EF364A467B126498A9F /* DKCircleButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2C67E32A52F71810F64971D8642CD962 /* SDevCircleButton */ = {
+		23E5FF4869C1537A5384CB56E2FACC25 /* SDevCircleButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 870217543E91206938D30B9E839188EF /* Build configuration list for PBXNativeTarget "SDevCircleButton" */;
+			buildConfigurationList = E369053A8C1E16B3FFECF8DC99B0276C /* Build configuration list for PBXNativeTarget "SDevCircleButton" */;
 			buildPhases = (
-				B99C57394E6A99CCC2800AB72A2A6096 /* Sources */,
-				09B6E2554A45A5E6E43848209A6E5251 /* Frameworks */,
-				C47ADBF8FE545A1AF25979F8927F19D0 /* Headers */,
+				6252BDB4D8976F64C96F8682595185B2 /* Sources */,
+				6C723A5F707095293723EFBB312E4B12 /* Frameworks */,
+				6C421E04F1EF4E9FBE0540BEC60B9509 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -419,28 +944,84 @@
 			);
 			name = SDevCircleButton;
 			productName = SDevCircleButton;
-			productReference = 88F9CF4447B32EC6F1D1CB123BA88753 /* SDevCircleButton.framework */;
+			productReference = F2BBA9932D7BAF9BC146B2C42F2C97F0 /* SDevCircleButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		45DC66B52503C1AC2F1A264D4A7F0A46 /* Pods-Connect */ = {
+		2AED08D3CF3D74A0BE505B13EF70257D /* DZNSegmentedControl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D314CC07F9636CEA877E0C9B51E5D499 /* Build configuration list for PBXNativeTarget "Pods-Connect" */;
+			buildConfigurationList = 20634A7FCC29C1DAA40F47A6D0DB1379 /* Build configuration list for PBXNativeTarget "DZNSegmentedControl" */;
 			buildPhases = (
-				70D24111F02C57D92B1FF8B8195648EF /* Sources */,
-				D6A8FE606AF72E9F3F22BAF3291AAB9D /* Frameworks */,
-				6A51D054291C89DF83A1D1E722AE869D /* Headers */,
+				EC1FDBD1A1CD060447857A9B751366B9 /* Sources */,
+				98434FA8327676B71F776D7AC1FD4833 /* Frameworks */,
+				C14AD3F8CF0274204E9EBEB61D0E0D87 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				36B97D251166D55B23D3EE512AF24A37 /* PBXTargetDependency */,
-				9F1DDD569ECBDC021274D87ED9594B8F /* PBXTargetDependency */,
-				8FDB56DF4A0D63AA9AC77C16159E7CDA /* PBXTargetDependency */,
-				FBFE9D28E750A8ABE3D8213E4339950F /* PBXTargetDependency */,
+			);
+			name = DZNSegmentedControl;
+			productName = DZNSegmentedControl;
+			productReference = 8C9625EC44E25DA4DB64A2EAD7634A47 /* DZNSegmentedControl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		38CAF05C09A0D681387E5240A32CE038 /* Pods-Connect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2110D45682F252A92E0C68F4DBDE3FB9 /* Build configuration list for PBXNativeTarget "Pods-Connect" */;
+			buildPhases = (
+				D1F3E253281416B5489AD5DE97E07DDD /* Sources */,
+				B0299215E42C1A4F3216C4BCD1F7EE33 /* Frameworks */,
+				95FDBCC3141C93E36B30796412014846 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34B47E29075FBE1C076BBE6421AD8A37 /* PBXTargetDependency */,
+				8535FDB7209D94D1BD28FF092EB1BB18 /* PBXTargetDependency */,
+				4714441F581925C68147266CABEC5BE6 /* PBXTargetDependency */,
+				0D7DC69B2E437842D38DDB98734D76E7 /* PBXTargetDependency */,
+				A161BA74438405D2A5E93A7804FF7815 /* PBXTargetDependency */,
+				A99C4DA307618D7085538C05C10D588D /* PBXTargetDependency */,
+				B74FB6BF1286CACD5A8FE8DAA1C64000 /* PBXTargetDependency */,
+				F562263FC4CF2C8F591EE32DC282640C /* PBXTargetDependency */,
 			);
 			name = "Pods-Connect";
 			productName = "Pods-Connect";
-			productReference = C25A67267B5E45DD175F5F7EB865229F /* Pods_Connect.framework */;
+			productReference = 170A9B0970DBE268E249F74BF9931BB4 /* Pods_Connect.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BF3BFEFFD5F510A0F882962F942B8C83 /* OpenWeatherMapAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60A889E27C82062C91EE67383B6D89CC /* Build configuration list for PBXNativeTarget "OpenWeatherMapAPI" */;
+			buildPhases = (
+				3E0539116DCB461260B99A98B725C0D3 /* Sources */,
+				07A8F9542CB8A866B7B2DBF19D30EC9E /* Frameworks */,
+				8AF48BB6C4B0E4C51DB4737F7ADC75F0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B279C2C71018483DD2DE07DFCDD52601 /* PBXTargetDependency */,
+			);
+			name = OpenWeatherMapAPI;
+			productName = OpenWeatherMapAPI;
+			productReference = AE3C869EFCEF7D91E8D9C7A1FEAA2969 /* OpenWeatherMapAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E2B5755772AE73DDC89A00C20BD7E53D /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB63109369E99874CC989AC2371EBF1E /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				68BF82886F3B204A211BB1A22CB8EA13 /* Sources */,
+				D45CE6B76B79DF58056603B5D2998621 /* Frameworks */,
+				E45C96B1010EE3C798A521F8FB7798EA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 3B6840C8128CE8105AC4EF977007877F /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E69B92A33BF0DA69766632232536DFFD /* LGSideMenuController */ = {
@@ -457,7 +1038,7 @@
 			);
 			name = LGSideMenuController;
 			productName = LGSideMenuController;
-			productReference = 7C16C4C03B38373132F82072A105B7EA /* LGSideMenuController.framework */;
+			productReference = 99D8F9ACDB47E07969B35FA8DDA1F54C /* LGSideMenuController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EA73E0C9E350C9951307BA0F65AAEA68 /* JTSlideShadowAnimation */ = {
@@ -474,7 +1055,24 @@
 			);
 			name = JTSlideShadowAnimation;
 			productName = JTSlideShadowAnimation;
-			productReference = 3F5A68A1022ED8A1487EE673B0ED2D58 /* JTSlideShadowAnimation.framework */;
+			productReference = 0E69DB174D4EF78B565CFB6B69F9077F /* JTSlideShadowAnimation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EBB70B39B24BFA8A41C2439A78FAC47B /* AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 231D0DBD6FB5D4A5A65AA235503C7B98 /* Build configuration list for PBXNativeTarget "AFNetworking" */;
+			buildPhases = (
+				D50EA1BD15466A4C85FBEA84E0912624 /* Sources */,
+				E022376BE717028ABBD823FDF1001EC5 /* Frameworks */,
+				21CF567CD7DDD583F52552416EA22A73 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFNetworking;
+			productName = AFNetworking;
+			productReference = D07CD3C1329ADA200A820C77A12D41C9 /* AFNetworking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -483,7 +1081,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -494,15 +1092,19 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3F09FE70340306B00E3D44707EE550E7 /* Products */;
+			productRefGroup = 7D62B0E9F1F9A136CCB93852A270203F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				EBB70B39B24BFA8A41C2439A78FAC47B /* AFNetworking */,
 				05B3ACEC8F9402E9FE38332F90EF15EA /* DKCircleButton */,
+				2AED08D3CF3D74A0BE505B13EF70257D /* DZNSegmentedControl */,
 				EA73E0C9E350C9951307BA0F65AAEA68 /* JTSlideShadowAnimation */,
 				E69B92A33BF0DA69766632232536DFFD /* LGSideMenuController */,
-				45DC66B52503C1AC2F1A264D4A7F0A46 /* Pods-Connect */,
-				2C67E32A52F71810F64971D8642CD962 /* SDevCircleButton */,
+				BF3BFEFFD5F510A0F882962F942B8C83 /* OpenWeatherMapAPI */,
+				38CAF05C09A0D681387E5240A32CE038 /* Pods-Connect */,
+				23E5FF4869C1537A5384CB56E2FACC25 /* SDevCircleButton */,
+				E2B5755772AE73DDC89A00C20BD7E53D /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
@@ -514,6 +1116,15 @@
 			files = (
 				81FCB8C90280A6A920800EC688FDD61F /* LGSideMenuController-dummy.m in Sources */,
 				C1FCBAC9363DD758CDA98D62B1ADF383 /* LGSideMenuController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E0539116DCB461260B99A98B725C0D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB4246B6F823132705C369E507F3831 /* OpenWeatherMapAPI-dummy.m in Sources */,
+				254D8201084C563C7DD55350C1F8B70F /* OWMWeatherAPI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,60 +1141,261 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4E940831C4FD7BF00820C1C /* MenuHeaderCell.swift in Sources */,
 				7360A134011FC30D28D0678AC5DE85CB /* DKCircleButton-dummy.m in Sources */,
 				4DB265B9BEA48D356C014800C13E1697 /* DKCircleButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		70D24111F02C57D92B1FF8B8195648EF /* Sources */ = {
+		6252BDB4D8976F64C96F8682595185B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FFA2834E364C1BABC233C9F4E1EB895 /* Pods-Connect-dummy.m in Sources */,
+				FE9D05F50F317067B2528E4C6CE74AD7 /* SDevCircleButton-dummy.m in Sources */,
+				24DB16F18145D9CF600AF1A84FFCAC8C /* SDevCircleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B99C57394E6A99CCC2800AB72A2A6096 /* Sources */ = {
+		68BF82886F3B204A211BB1A22CB8EA13 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88C405820A5D4FEA9592D0D63AF98850 /* SDevCircleButton-dummy.m in Sources */,
-				6D727410ACCDFFAB7EB54E312B35617C /* SDevCircleButton.swift in Sources */,
+				31FE5A96833352A3E3A6CA51B3EFB41E /* SwiftyJSON-dummy.m in Sources */,
+				D6BF8ABE3F5041C8B683871B5C5ECE82 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F3E253281416B5489AD5DE97E07DDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDAE3972B72FD740DCA093B992514F4 /* Pods-Connect-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D50EA1BD15466A4C85FBEA84E0912624 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E4136378DF37CCE638230F03EC29C10 /* AFHTTPClient.m in Sources */,
+				87DF808B9FB0B55C32161B133963B58B /* AFHTTPRequestOperation.m in Sources */,
+				7522455C2CDCF572F35DBAF933C3C8DF /* AFImageRequestOperation.m in Sources */,
+				E897635A1E7AF12EA971D6461EBC304B /* AFJSONRequestOperation.m in Sources */,
+				6F674FDC67D89CADA86F3C6148434FA3 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				9BD5CD46EDA394F188D046A6968C63A9 /* AFNetworking-dummy.m in Sources */,
+				5E37D2A1E3FE51EC7D59F75BB401EDEA /* AFPropertyListRequestOperation.m in Sources */,
+				AD1912BEA478D0F70BF23EB7DEEB2630 /* AFURLConnectionOperation.m in Sources */,
+				B93604D408D9BD7AB269E22171D16C8E /* AFXMLRequestOperation.m in Sources */,
+				0BB927972A4B78BE805DE85B9EB7DA89 /* UIImageView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC1FDBD1A1CD060447857A9B751366B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE3CF39F8644E7BF3CC5BB0B45AE2B3 /* DZNSegmentedControl-dummy.m in Sources */,
+				554E2995F94EE6A826F99B655625ECB0 /* DZNSegmentedControl.m in Sources */,
+				10694EBE0CA6160B44AD5B2D394C6E58 /* UIScrollView+DZNSegmentedControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		36B97D251166D55B23D3EE512AF24A37 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DKCircleButton;
-			target = 05B3ACEC8F9402E9FE38332F90EF15EA /* DKCircleButton */;
-			targetProxy = C9561D4EF445CB2F1C1367A9422C9043 /* PBXContainerItemProxy */;
-		};
-		8FDB56DF4A0D63AA9AC77C16159E7CDA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LGSideMenuController;
-			target = E69B92A33BF0DA69766632232536DFFD /* LGSideMenuController */;
-			targetProxy = 8F07120DA738978BB7BE37C5B6A634CA /* PBXContainerItemProxy */;
-		};
-		9F1DDD569ECBDC021274D87ED9594B8F /* PBXTargetDependency */ = {
+		0D7DC69B2E437842D38DDB98734D76E7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JTSlideShadowAnimation;
 			target = EA73E0C9E350C9951307BA0F65AAEA68 /* JTSlideShadowAnimation */;
-			targetProxy = 1B5EF6275DEA79503375D815E31F11D8 /* PBXContainerItemProxy */;
+			targetProxy = AE12DC8FF76508458F14770832CB0CC9 /* PBXContainerItemProxy */;
 		};
-		FBFE9D28E750A8ABE3D8213E4339950F /* PBXTargetDependency */ = {
+		34B47E29075FBE1C076BBE6421AD8A37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = EBB70B39B24BFA8A41C2439A78FAC47B /* AFNetworking */;
+			targetProxy = 39F16469571EECD63DE0014144560C0D /* PBXContainerItemProxy */;
+		};
+		4714441F581925C68147266CABEC5BE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DZNSegmentedControl;
+			target = 2AED08D3CF3D74A0BE505B13EF70257D /* DZNSegmentedControl */;
+			targetProxy = 270298FB6D7AC6A6C9B846D9813F67D4 /* PBXContainerItemProxy */;
+		};
+		8535FDB7209D94D1BD28FF092EB1BB18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DKCircleButton;
+			target = 05B3ACEC8F9402E9FE38332F90EF15EA /* DKCircleButton */;
+			targetProxy = 4698ACBD0B5563EF840894068C7B05FF /* PBXContainerItemProxy */;
+		};
+		A161BA74438405D2A5E93A7804FF7815 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LGSideMenuController;
+			target = E69B92A33BF0DA69766632232536DFFD /* LGSideMenuController */;
+			targetProxy = 2C9BBFCB77413A20EDC158282E1F0405 /* PBXContainerItemProxy */;
+		};
+		A99C4DA307618D7085538C05C10D588D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OpenWeatherMapAPI;
+			target = BF3BFEFFD5F510A0F882962F942B8C83 /* OpenWeatherMapAPI */;
+			targetProxy = EA8AB352B64705A74609398D40F6FEA0 /* PBXContainerItemProxy */;
+		};
+		B279C2C71018483DD2DE07DFCDD52601 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = EBB70B39B24BFA8A41C2439A78FAC47B /* AFNetworking */;
+			targetProxy = 57D015F2AFBD662385D3879DDCD5FA06 /* PBXContainerItemProxy */;
+		};
+		B74FB6BF1286CACD5A8FE8DAA1C64000 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SDevCircleButton;
-			target = 2C67E32A52F71810F64971D8642CD962 /* SDevCircleButton */;
-			targetProxy = 68EE7CCF2F0C79E0F82BF5D9617FA218 /* PBXContainerItemProxy */;
+			target = 23E5FF4869C1537A5384CB56E2FACC25 /* SDevCircleButton */;
+			targetProxy = E6B78BFA9F1A69BEB4376446D19AA29F /* PBXContainerItemProxy */;
+		};
+		F562263FC4CF2C8F591EE32DC282640C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = E2B5755772AE73DDC89A00C20BD7E53D /* SwiftyJSON */;
+			targetProxy = 265F88B738E0E3A4DC4781019236D231 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		116470816E401224688F95AE6A98D70B /* Release */ = {
+		13E5C491B0A6895219D9AD90BB375ABF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2F94540F38263425B0EEF8932DD0471 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		181CDE53D0CD79C35675D1787A1A0241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BE86A8DF07F38FDD5444036DADF5B0E /* JTSlideShadowAnimation.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JTSlideShadowAnimation/JTSlideShadowAnimation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JTSlideShadowAnimation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JTSlideShadowAnimation/JTSlideShadowAnimation.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JTSlideShadowAnimation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		32F34BCC23CA341DFB5777B036567722 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FC358AD6CD3EE329458CA3CFBC5B8A5 /* DZNSegmentedControl.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DZNSegmentedControl/DZNSegmentedControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DZNSegmentedControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DZNSegmentedControl/DZNSegmentedControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DZNSegmentedControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3E7859C02E82B0381524275A424193AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BF00C103B801F88580341AD9ABC2830 /* OpenWeatherMapAPI.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OpenWeatherMapAPI/OpenWeatherMapAPI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OpenWeatherMapAPI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OpenWeatherMapAPI/OpenWeatherMapAPI.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = OpenWeatherMapAPI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		43E986FA1088881ADA9ABA56284546F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FC358AD6CD3EE329458CA3CFBC5B8A5 /* DZNSegmentedControl.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DZNSegmentedControl/DZNSegmentedControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DZNSegmentedControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DZNSegmentedControl/DZNSegmentedControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DZNSegmentedControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4B0E0D47C086AEC0EE5BFF45A7C7144B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1FBF0D543A42D82BB4A803340A064E7D /* Pods-Connect.release.xcconfig */;
 			buildSettings = {
@@ -613,9 +1425,9 @@
 			};
 			name = Release;
 		};
-		181CDE53D0CD79C35675D1787A1A0241 /* Release */ = {
+		6395B93F528AA2C3DCAE135560778B25 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F12069169C839A1221D00014C40FDD9 /* JTSlideShadowAnimation.xcconfig */;
+			baseConfigurationReference = EA63342EE5E0B454422586678D1B594D /* SDevCircleButton.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -624,14 +1436,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/JTSlideShadowAnimation/JTSlideShadowAnimation-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JTSlideShadowAnimation/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SDevCircleButton/SDevCircleButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SDevCircleButton/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JTSlideShadowAnimation/JTSlideShadowAnimation.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SDevCircleButton/SDevCircleButton.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = JTSlideShadowAnimation;
+				PRODUCT_NAME = SDevCircleButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -640,9 +1452,64 @@
 			};
 			name = Release;
 		};
+		676E7F9BBB8AC16281CC969AB2199C4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB2398C49D9C4CA0A2CA302C75B87A2C /* AFNetworking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		83D2452ED82D70FBE2D7F7E4C61C2DB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA63342EE5E0B454422586678D1B594D /* SDevCircleButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SDevCircleButton/SDevCircleButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SDevCircleButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SDevCircleButton/SDevCircleButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SDevCircleButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		8527E39477C6AE9A78E0575675BDC7A4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 979BB2527A034BCB639D0FDA369A55BB /* LGSideMenuController.xcconfig */;
+			baseConfigurationReference = 146EAA3024FC83667028EB72EB4A291F /* LGSideMenuController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -669,7 +1536,7 @@
 		};
 		86D609457C517B86554BE5310AF36D6C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F12069169C839A1221D00014C40FDD9 /* JTSlideShadowAnimation.xcconfig */;
+			baseConfigurationReference = 5BE86A8DF07F38FDD5444036DADF5B0E /* JTSlideShadowAnimation.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -735,9 +1602,8 @@
 		};
 		919669D7567230AB0B4510EB9ECCD02A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0C0F9B1FB167D581D3B22ABE11B3910 /* DKCircleButton.xcconfig */;
+			baseConfigurationReference = 606A03A8E746ED94F9E4A5EA2B2875C1 /* DKCircleButton.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -761,9 +1627,9 @@
 			};
 			name = Release;
 		};
-		A55D0DC4643AEF151436C43D582A5A83 /* Release */ = {
+		9CEDCA7B55E4EE734633F1A95E79A9F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13182FB10B1C9707BEDB8906B1945C92 /* SDevCircleButton.xcconfig */;
+			baseConfigurationReference = 0CBF5D6DC08C6E26B95A1342A2517389 /* Pods-Connect.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -772,25 +1638,29 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SDevCircleButton/SDevCircleButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SDevCircleButton/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Connect/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SDevCircleButton/SDevCircleButton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SDevCircleButton;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Connect/Pods-Connect.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Connect;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		AC699B2EDD193D6614F925A419E6E2D9 /* Debug */ = {
+		C49FBE0ED2AE897E4A7D3AE7E6FE62D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13182FB10B1C9707BEDB8906B1945C92 /* SDevCircleButton.xcconfig */;
+			baseConfigurationReference = EB2398C49D9C4CA0A2CA302C75B87A2C /* AFNetworking.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -799,17 +1669,16 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SDevCircleButton/SDevCircleButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SDevCircleButton/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SDevCircleButton/SDevCircleButton.modulemap";
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SDevCircleButton;
+				PRODUCT_NAME = AFNetworking;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -850,9 +1719,9 @@
 			};
 			name = Release;
 		};
-		D1B755DEA67ADB0E7C49319F2F565D2E /* Debug */ = {
+		E55C49360CEE26C3E6E7A858B21C4D22 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CBF5D6DC08C6E26B95A1342A2517389 /* Pods-Connect.debug.xcconfig */;
+			baseConfigurationReference = 4BF00C103B801F88580341AD9ABC2830 /* OpenWeatherMapAPI.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -861,20 +1730,16 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Connect/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/OpenWeatherMapAPI/OpenWeatherMapAPI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OpenWeatherMapAPI/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Connect/Pods-Connect.modulemap";
+				MODULEMAP_FILE = "Target Support Files/OpenWeatherMapAPI/OpenWeatherMapAPI.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Connect;
+				PRODUCT_NAME = OpenWeatherMapAPI;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -883,7 +1748,7 @@
 		};
 		E6FFEA54375A01D529A87CED86753323 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 979BB2527A034BCB639D0FDA369A55BB /* LGSideMenuController.xcconfig */;
+			baseConfigurationReference = 146EAA3024FC83667028EB72EB4A291F /* LGSideMenuController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -910,9 +1775,8 @@
 		};
 		F1786262C7B20465EC3E2F822730412B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0C0F9B1FB167D581D3B22ABE11B3910 /* DKCircleButton.xcconfig */;
+			baseConfigurationReference = 606A03A8E746ED94F9E4A5EA2B2875C1 /* DKCircleButton.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -930,12 +1794,38 @@
 				PRODUCT_NAME = DKCircleButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		FC1BD3EA203C0AE231FA5195872EBF4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2F94540F38263425B0EEF8932DD0471 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -949,6 +1839,33 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		20634A7FCC29C1DAA40F47A6D0DB1379 /* Build configuration list for PBXNativeTarget "DZNSegmentedControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E986FA1088881ADA9ABA56284546F8 /* Debug */,
+				32F34BCC23CA341DFB5777B036567722 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2110D45682F252A92E0C68F4DBDE3FB9 /* Build configuration list for PBXNativeTarget "Pods-Connect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CEDCA7B55E4EE734633F1A95E79A9F9 /* Debug */,
+				4B0E0D47C086AEC0EE5BFF45A7C7144B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		231D0DBD6FB5D4A5A65AA235503C7B98 /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C49FBE0ED2AE897E4A7D3AE7E6FE62D6 /* Debug */,
+				676E7F9BBB8AC16281CC969AB2199C4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -958,11 +1875,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		870217543E91206938D30B9E839188EF /* Build configuration list for PBXNativeTarget "SDevCircleButton" */ = {
+		60A889E27C82062C91EE67383B6D89CC /* Build configuration list for PBXNativeTarget "OpenWeatherMapAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AC699B2EDD193D6614F925A419E6E2D9 /* Debug */,
-				A55D0DC4643AEF151436C43D582A5A83 /* Release */,
+				E55C49360CEE26C3E6E7A858B21C4D22 /* Debug */,
+				3E7859C02E82B0381524275A424193AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -985,11 +1902,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D314CC07F9636CEA877E0C9B51E5D499 /* Build configuration list for PBXNativeTarget "Pods-Connect" */ = {
+		BB63109369E99874CC989AC2371EBF1E /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D1B755DEA67ADB0E7C49319F2F565D2E /* Debug */,
-				116470816E401224688F95AE6A98D70B /* Release */,
+				13E5C491B0A6895219D9AD90BB375ABF /* Debug */,
+				FC1BD3EA203C0AE231FA5195872EBF4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E369053A8C1E16B3FFECF8DC99B0276C /* Build configuration list for PBXNativeTarget "SDevCircleButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83D2452ED82D70FBE2D7F7E4C61C2DB2 /* Debug */,
+				6395B93F528AA2C3DCAE135560778B25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

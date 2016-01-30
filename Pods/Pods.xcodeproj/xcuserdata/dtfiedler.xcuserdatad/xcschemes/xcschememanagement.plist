@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>DKCircleButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DZNSegmentedControl.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -19,12 +29,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>OpenWeatherMapAPI.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Connect.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>SDevCircleButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,12 +57,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2C67E32A52F71810F64971D8642CD962</key>
+		<key>23E5FF4869C1537A5384CB56E2FACC25</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>45DC66B52503C1AC2F1A264D4A7F0A46</key>
+		<key>2AED08D3CF3D74A0BE505B13EF70257D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>38CAF05C09A0D681387E5240A32CE038</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BF3BFEFFD5F510A0F882962F942B8C83</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2B5755772AE73DDC89A00C20BD7E53D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -53,6 +88,11 @@
 			<true/>
 		</dict>
 		<key>EA73E0C9E350C9951307BA0F65AAEA68</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EBB70B39B24BFA8A41C2439A78FAC47B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -11,18 +11,20 @@ import DKCircleButton
 import SDevCircleButton
 import JTSlideShadowAnimation
 import LGSideMenuController
+import GoogleMaps
+import OpenWeatherMapAPI
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate {
 
     @IBOutlet weak var bottomView: UIVisualEffectView!
     @IBOutlet weak var imageView: UIImageView!
-    let button1 = SDevCircleButton(frame: CGRectMake(0, 0, 50, 50))
+    let button1 = SDevCircleButton(frame: CGRectMake(0, 0, 60, 60))
     
-    let button2 = SDevCircleButton(frame: CGRectMake(0, 0, 75, 75))
+    let button2 = SDevCircleButton(frame: CGRectMake(0, 0, 85, 85))
     
-    let button3 = SDevCircleButton(frame: CGRectMake(0, 0, 50, 50))
+    let button3 = SDevCircleButton(frame: CGRectMake(0, 0, 60, 60))
     
-    let button4 = SDevCircleButton(frame: CGRectMake(0, 0, 75, 75))
+    let button4 = SDevCircleButton(frame: CGRectMake(0, 0, 85, 85))
     
     let shadowAnimation = JTSlideShadowAnimation()
     let label1 = UILabel()
@@ -30,6 +32,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let label3 = UILabel()
     let label4 = UILabel()
     var myMainViewController = LGSideMenuController()
+    var placePicker: GMSPlacePicker?
+    var placesClient: GMSPlacesClient?
+    let pink = UIColor(red: 242/255, green: 87/255, blue: 100/255, alpha: 1)
+    let teal = UIColor(red: 4/255, green: 217/255, blue: 196/255, alpha: 1)
     
     var helpView = UIView()
     var blurEffect2 = UIBlurEffect(style: UIBlurEffectStyle.Dark)
@@ -39,13 +45,34 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var icons = ["building", "phone","map", "compass", "dots", ""]
     var options = ["Building Amenities", "Call the hotel", "Local Map", "How do I get to the hotel?", "Make a request"]
     
+    @IBOutlet weak var weatherImage: UIImageView!
+    @IBOutlet weak var weatherLabel: UILabel!
+    
+    let locationManager = CLLocationManager()
+    var weatherAPI = OWMWeatherAPI(APIKey: "72e38597fbc296e06e10b441c12b963d")
+    
+    var location: CLPlacemark?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        weatherLabel.text = ""
+        weatherImage.alpha = 0
+        
+        
+        //let location = NSUserDefaults.standardUserDefaults().objectForKey("location") as! [String]
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "events", name: "events", object: nil)
+         NSNotificationCenter.defaultCenter().addObserver(self, selector: "nearby", name: "nearby", object: nil)
+        
+        self.locationManager.requestWhenInUseAuthorization()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        
+        self.weatherLabel.alpha = 0
 
-        
-        myMainViewController = self.storyboard?.instantiateViewControllerWithIdentifier("sideMenu") as! LGSideMenuController
-        
+        weatherAPI.setTemperatureFormat(kOWMTempFahrenheit)
         self.navigationItem.title = "Welcome"
         
         button1.center = CGPointMake(self.view.frame.width * 0.15, self.view.frame.height - 140)
@@ -57,14 +84,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         button1.animateTap = true
         
 
-        let origImage1 = UIImage(named: "bed");
+        let origImage1 = UIImage(named: "events");
         let tintedImage1 = origImage1?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
         button1.setImage(tintedImage1, forState: .Normal)
-        button1.tintColor = UIColor(red: 20/255, green: 217/255, blue: 33/255, alpha: 1)
+        button1.tintColor = pink
         button1.imageView?.contentMode = .ScaleAspectFit
 
         
-        button1.borderColor = UIColor.darkGrayColor()
+        button1.borderColor = UIColor.whiteColor()
         button1.borderSize = 2.0
         
         button1.addTarget(self, action: "left", forControlEvents: UIControlEvents.TouchUpInside)
@@ -81,9 +108,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let origImage = UIImage(named: "bell");
         let tintedImage = origImage?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
         button2.setImage(tintedImage, forState: .Normal)
-        button2.tintColor = UIColor(red: 244/255, green: 187/255, blue: 22/255, alpha: 1)
+        button2.tintColor = pink
         button2.imageView?.contentMode = .ScaleAspectFit
-        button2.borderColor = UIColor.darkGrayColor()
+        button2.borderColor = UIColor.whiteColor()
         button2.borderSize = 2.0
         
         button3.center = CGPointMake(self.view.frame.width * 0.85, self.view.frame.height - 140)
@@ -98,18 +125,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let markerImage = UIImage(named: "checkMarker");
         let tintedImage2 = markerImage?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
         button3.setImage(tintedImage2, forState: .Normal)
-        button3.tintColor = UIColor(red: 20/255, green: 217/255, blue: 33/255, alpha: 1)
+        button3.tintColor = pink
         button3.imageView?.contentMode = .ScaleAspectFit
 
         
         button3.addTarget(self, action: "right", forControlEvents: UIControlEvents.TouchUpInside)
         
-        button3.borderColor = UIColor.darkGrayColor()
+        button3.borderColor = UIColor.whiteColor()
         button3.borderSize = 2.0
         
         //button3.sc
 
-        label1.text = "Book A Room"
+        label1.text = "Events"
         label1.font = UIFont.systemFontOfSize(12, weight: UIFontWeightLight)
         label1.sizeToFit()
         label1.center.x = button1.center.x
@@ -132,13 +159,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         
         
+        //Slide for menu animation and view
         label4.text = "< < <  Slide for menu  > > >"
         label4.font = UIFont.systemFontOfSize(14, weight: UIFontWeightLight)
         label4.sizeToFit()
         label4.center.x = button2.center.x
         label4.center.y = button2.center.y - button2.frame.height
         label4.textColor = UIColor.whiteColor()
-    
         
         shadowAnimation.animatedView = label4
         shadowAnimation.shadowWidth = 20
@@ -152,11 +179,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.view.addSubview(label1)
         self.view.addSubview(label2)
         self.view.addSubview(label3)
-        self.view.addSubview(label4)
+        //self.view.addSubview(label4)
         
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.frame = (CGRect(x: 0, y: CGFloat(self.imageView.frame.height) * CGFloat(0.9), width: imageView.frame.width, height: imageView.frame.height))
+        blurEffectView.frame = (CGRect(x: 0, y: CGFloat(self.imageView.frame.height) * CGFloat(1.0), width: imageView.frame.width, height: imageView.frame.height))
         blurEffectView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight] // for supporting device rotation
         
         let homeLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.height / 2,height: 30))
@@ -173,7 +200,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         
         //help menu setup
-        blurEffect2 = UIBlurEffect(style: UIBlurEffectStyle.Dark)
+        blurEffect2 = UIBlurEffect(style: UIBlurEffectStyle.Light)
         blurEffectView2 = UIVisualEffectView(effect: blurEffect2)
         blurEffectView2.frame = (CGRect(x: 0, y: self.view.frame.height, width: self.view.frame.width, height: self.view.frame.height))
         blurEffectView2.autoresizingMask = [.FlexibleWidth, .FlexibleHeight] // for supporting device rotation
@@ -183,7 +210,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         helpTable.registerClass(CustomCell.self, forCellReuseIdentifier: "cell")
         helpTable.delegate = self
         helpTable.dataSource = self
-        helpTable.backgroundColor = UIColor.darkGrayColor()
+        helpTable.backgroundColor = UIColor.whiteColor()
         
         
         button4.center = CGPoint(x: self.imageView.frame.width/2, y: self.helpTable.frame.origin.y - 75)
@@ -197,9 +224,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let origImage10 = UIImage(named: "cancel");
         let tintedImage10 = origImage10?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
         button4.setImage(tintedImage10, forState: .Normal)
-        button4.tintColor = UIColor(red: 244/255, green: 187/255, blue: 22/255, alpha: 1)
+        button4.tintColor = pink
         button4.imageView?.contentMode = .ScaleAspectFit
-        button4.borderColor = UIColor.darkGrayColor()
+        button4.borderColor = UIColor.whiteColor()
         button4.borderSize = 2.0
         
         blurEffectView2.addSubview(helpTable)
@@ -215,6 +242,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         blurEffectView2.addGestureRecognizer(downSwipe)
         self.view.addGestureRecognizer(rightSwipe)
         self.view.addSubview(self.blurEffectView2)
+        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -227,6 +258,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         shadowAnimation.shadowWidth = 20
         shadowAnimation.duration = 3.0
         shadowAnimation.start()
+        
+         self.navigationItem.title = "Welcome"
     }
     
     func handleSwipes(sender: UISwipeGestureRecognizer){
@@ -243,10 +276,43 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
         }
     }
+    
+    func updateWeather(){
+        
+        print(location)
+        
+        let city = location?.locality
+        
+        weatherAPI.currentWeatherByCityName(city, withCallback: {(error: NSError!, result: [NSObject: AnyObject]!) -> Void in
+            if (error != nil){
+                print("error retriving weather")
+                self.weatherLabel.text = "Error retreiveing weather"
+            } else {
+                let cityName = result["name"] as! String!
+                let currentTemp = "\(Int(round(result["main"]!["temp"] as! Float)))\u{00B0}"
+                let conditions = result["weather"]!["main"]
+                print(result["weather"]!)
+                let weather = [cityName, currentTemp] as [String]
+                self.weatherLabel.text = weather.joinWithSeparator("\n")
+            }})
+        
+        UIView.animateWithDuration(0.5, animations: {
+            self.weatherLabel.alpha = 1
+            self.weatherImage.alpha = 1
+        })
+    }
+    
     func left(){
         print("button selected")
-        //button1.triggerAnimateTap()
         button1.selected = false
+        if (label1.text == "Events"){
+            self.performSegueWithIdentifier("events", sender: self)
+        }
+    }
+    
+    func showMessages(){
+        
+        self.performSegueWithIdentifier("messages", sender: self)
     }
     
     func main(){
@@ -286,7 +352,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
 
     }
-    
     
     func closeMenu(){
         
@@ -328,22 +393,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let tintedImage2 = markerImage?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
         
         button1.setImage(tintedImage2, forState: .Normal)
-        button1.tintColor = UIColor(red: 0/255, green: 203/255, blue: 229/255, alpha: 1)
+        button1.tintColor = pink
         button1.imageView?.contentMode = .ScaleAspectFit
+        button1.removeTarget(self, action: "left", forControlEvents: .TouchUpInside)
+        button1.addTarget(self, action: "showMessages", forControlEvents: .TouchUpInside)
         
         let markerImage2 = UIImage(named: "logout");
         let tintedImage1 = markerImage2?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
         
         
         button3.setImage(tintedImage1, forState: .Normal)
-        button3.tintColor = UIColor(red: 0/255, green: 203/255, blue: 229/255, alpha: 1)
+        button3.tintColor = pink
         button3.imageView?.contentMode = .ScaleAspectFit
         button3.addTarget(self, action: "right2", forControlEvents: UIControlEvents.TouchUpInside)
     }
     
     func right2(){
         
-        label1.text = "Book A Room"
+        label1.text = "Events"
         label3.text = "I'm Here"
         label3.sizeToFit()
         label1.sizeToFit()
@@ -354,18 +421,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         label1.center.y = label2.center.y
 
         
-        let markerImage = UIImage(named: "bed");
-        let tintedImage2 = markerImage?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-        
-        button1.setImage(tintedImage2, forState: .Normal)
-        button1.tintColor = UIColor(red: 20/255, green: 217/255, blue: 33/255, alpha: 1)
+        let origImage1 = UIImage(named: "events");
+        let tintedImage1 = origImage1?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+        button1.setImage(tintedImage1, forState: .Normal)
+        button1.tintColor = pink
         button1.imageView?.contentMode = .ScaleAspectFit
         
         let markerImage2 = UIImage(named: "checkMarker");
-        let tintedImage1 = markerImage2?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+        let tintedImage2 = markerImage2?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
         
-        button3.setImage(tintedImage1, forState: .Normal)
-        button3.tintColor = UIColor(red: 20/255, green: 217/255, blue: 33/255, alpha: 1)
+        button3.setImage(tintedImage2, forState: .Normal)
+        button3.tintColor = pink
         button3.imageView?.contentMode = .ScaleAspectFit
         button3.addTarget(self, action: "right", forControlEvents: UIControlEvents.TouchUpInside)
         
@@ -388,12 +454,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         icon.image = imageTinted
         icon.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
         icon.center = CGPoint(x: 30, y: cell.center.y)
-        icon.tintColor = UIColor.whiteColor()
+        icon.tintColor = pink
         
         
         let label = UILabel()
         label.frame = CGRect(x: 0, y: 0, width: 100, height: 20)
-        label.textColor = UIColor.whiteColor()
+        label.textColor = pink
         label.text = "\(options[indexPath.row])"
         label.center = CGPoint(x: 110, y: 20)
         label.font = UIFont.systemFontOfSize(18, weight: UIFontWeightLight)
@@ -402,16 +468,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         label.sizeToFit()
         cell.addSubview(label)
         cell.addSubview(icon)
-        //cell.textLabel!.center = cell.center
-        cell.backgroundColor = UIColor.clearColor()
-        cell.textLabel?.textColor = UIColor.whiteColor()
+        cell.backgroundColor = UIColor.whiteColor()
         
         return cell
     }
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()
-        headerView.backgroundColor = UIColor.orangeColor()
+        headerView.backgroundColor = teal
         headerView.frame = CGRect(x: 0, y: 0, width: tableView.frame.width, height: 50)
         headerView.clipsToBounds = true
         let label = UILabel()
@@ -434,10 +498,54 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        if (indexPath.row == 2){
+            //self.findNearby()
+            self.performSegueWithIdentifier("nearby", sender: self)
+        }
     }
+    
     @IBAction func toggleMenu(sender: AnyObject) {
+       NSNotificationCenter.defaultCenter().postNotificationName("toggleMenu", object: nil)
+    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        CLGeocoder().reverseGeocodeLocation(manager.location!, completionHandler: {(placemarks, error)-> Void in
+            if (error != nil) {
+                print("Reverse geocoder failed with error" + error!.localizedDescription)
+                return
+            }
+            
+            if placemarks!.count >= 0 {
+                let pm = placemarks![0] as CLPlacemark
+                let address = pm.addressDictionary!["FormattedAddressLines"] as! [String]
+                print(address)
+                self.location = pm
+                NSUserDefaults.standardUserDefaults().setObject(address, forKey: "location")
+                self.updateWeather()
+                self.locationManager.stopUpdatingLocation()
+                self.locationManager.startMonitoringSignificantLocationChanges()
+            } else {
+                print("Problem with the data received from geocoder")
+            }
+        })
+        
+    }
+    
+    func events(){
         NSNotificationCenter.defaultCenter().postNotificationName("toggleMenu", object: nil)
-        myMainViewController.showLeftViewAnimated(true, completionHandler: nil)
+        self.performSegueWithIdentifier("events", sender: self)
+    }
+    
+    func nearby(){
+        NSNotificationCenter.defaultCenter().postNotificationName("toggleMenu", object: nil)
+        self.performSegueWithIdentifier("nearby", sender: self)
+
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        self.navigationItem.title = ""
     }
     
 }

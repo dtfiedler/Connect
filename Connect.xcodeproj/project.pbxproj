@@ -8,6 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		9FCB03AD10A23DF469C69860 /* Pods_Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC06B84E7BD9E0852724DAB5 /* Pods_Connect.framework */; };
+		C405B26C1C52A4520002CBF6 /* MarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C405B26B1C52A4520002CBF6 /* MarkerInfoView.xib */; };
+		C405B26E1C52BB4D0002CBF6 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C405B26D1C52BB4D0002CBF6 /* MenuViewController.swift */; };
+		C405B2701C52E1910002CBF6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C405B26F1C52E1910002CBF6 /* CoreLocation.framework */; };
+		C4102C881C5BFDE400DB7057 /* HolverViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4102C871C5BFDE400DB7057 /* HolverViewViewController.swift */; };
+		C4102C901C5BFE0600DB7057 /* ArcLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4102C891C5BFE0600DB7057 /* ArcLayer.swift */; };
+		C4102C911C5BFE0600DB7057 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4102C8A1C5BFE0600DB7057 /* Colors.swift */; };
+		C4102C921C5BFE0600DB7057 /* HolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4102C8B1C5BFE0600DB7057 /* HolderView.swift */; };
+		C4102C931C5BFE0600DB7057 /* OvalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4102C8C1C5BFE0600DB7057 /* OvalLayer.swift */; };
+		C4102C941C5BFE0600DB7057 /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4102C8D1C5BFE0600DB7057 /* RectangleLayer.swift */; };
+		C4102C951C5BFE0600DB7057 /* TriangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4102C8E1C5BFE0600DB7057 /* TriangleLayer.swift */; };
+		C4102C961C5BFE0600DB7057 /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4102C8F1C5BFE0600DB7057 /* LoadViewController.swift */; };
+		C42EE87E1C515D6E002AF8DF /* NearbyPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42EE87D1C515D6E002AF8DF /* NearbyPlacesViewController.swift */; };
+		C42EE8801C516753002AF8DF /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42EE87F1C516753002AF8DF /* PlaceMarker.swift */; };
+		C42EE8831C5167E2002AF8DF /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42EE8811C5167E2002AF8DF /* GoogleDataProvider.swift */; };
+		C42EE8841C5167E2002AF8DF /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42EE8821C5167E2002AF8DF /* GooglePlace.swift */; };
+		C42EE8861C5168D2002AF8DF /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42EE8851C5168D2002AF8DF /* MarkerInfoView.swift */; };
 		C43713F81C4EDB04005F2929 /* SDevCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43713F71C4EDB04005F2929 /* SDevCircleButton.swift */; };
 		C43713FA1C4EDD16005F2929 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43713F91C4EDD16005F2929 /* ViewController.swift */; };
 		C43713FC1C4FCB10005F2929 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43713FB1C4FCB10005F2929 /* NavigationViewController.swift */; };
@@ -15,6 +31,9 @@
 		C472D9941C500984001F7F25 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472D9931C500984001F7F25 /* HelpView.swift */; };
 		C472D9961C500A62001F7F25 /* HelpTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472D9951C500A62001F7F25 /* HelpTable.swift */; };
 		C472D99A1C50331B001F7F25 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472D9991C50331B001F7F25 /* CustomCell.swift */; };
+		C472D99C1C509C18001F7F25 /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472D99B1C509C18001F7F25 /* MessagesTableViewController.swift */; };
+		C4C7C1F01C5BE8360027EBEF /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C7C1EF1C5BE8360027EBEF /* EventsTableViewController.swift */; };
+		C4C7C1F21C5BE9EA0027EBEF /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C7C1F11C5BE9EA0027EBEF /* EventsTableViewCell.swift */; };
 		C4E940851C4FDF1D00820C1C /* LeftMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E940841C4FDF1D00820C1C /* LeftMenuTableViewController.swift */; };
 		C4F771411C4ED66C00048E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F771401C4ED66C00048E94 /* AppDelegate.swift */; };
 		C4F771461C4ED66C00048E94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4F771441C4ED66C00048E94 /* Main.storyboard */; };
@@ -25,6 +44,23 @@
 /* Begin PBXFileReference section */
 		3C5FCF1FEA4D755607689495 /* Pods-Connect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Connect/Pods-Connect.debug.xcconfig"; sourceTree = "<group>"; };
 		A85CA0A239D7F3670D91670C /* Pods-Connect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connect.release.xcconfig"; path = "Pods/Target Support Files/Pods-Connect/Pods-Connect.release.xcconfig"; sourceTree = "<group>"; };
+		C405B26B1C52A4520002CBF6 /* MarkerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerInfoView.xib; sourceTree = "<group>"; };
+		C405B26D1C52BB4D0002CBF6 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		C405B26F1C52E1910002CBF6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C4102C871C5BFDE400DB7057 /* HolverViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolverViewViewController.swift; sourceTree = "<group>"; };
+		C4102C891C5BFE0600DB7057 /* ArcLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArcLayer.swift; path = "../../../Downloads/SBLoader - Starter/SBLoader/ArcLayer.swift"; sourceTree = "<group>"; };
+		C4102C8A1C5BFE0600DB7057 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = "../../../Downloads/SBLoader - Starter/SBLoader/Colors.swift"; sourceTree = "<group>"; };
+		C4102C8B1C5BFE0600DB7057 /* HolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HolderView.swift; path = "../../../Downloads/SBLoader - Starter/SBLoader/HolderView.swift"; sourceTree = "<group>"; };
+		C4102C8C1C5BFE0600DB7057 /* OvalLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OvalLayer.swift; path = "../../../Downloads/SBLoader - Starter/SBLoader/OvalLayer.swift"; sourceTree = "<group>"; };
+		C4102C8D1C5BFE0600DB7057 /* RectangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RectangleLayer.swift; path = "../../../Downloads/SBLoader - Starter/SBLoader/RectangleLayer.swift"; sourceTree = "<group>"; };
+		C4102C8E1C5BFE0600DB7057 /* TriangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TriangleLayer.swift; path = "../../../Downloads/SBLoader - Starter/SBLoader/TriangleLayer.swift"; sourceTree = "<group>"; };
+		C4102C8F1C5BFE0600DB7057 /* LoadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadViewController.swift; path = "../../../Downloads/SBLoader - Starter/SBLoader/LoadViewController.swift"; sourceTree = "<group>"; };
+		C42EE87D1C515D6E002AF8DF /* NearbyPlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NearbyPlacesViewController.swift; path = ../NearbyPlacesViewController.swift; sourceTree = "<group>"; };
+		C42EE87F1C516753002AF8DF /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
+		C42EE8811C5167E2002AF8DF /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
+		C42EE8821C5167E2002AF8DF /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
+		C42EE8851C5168D2002AF8DF /* MarkerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
+		C42EE8871C516EA9002AF8DF /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		C43713F71C4EDB04005F2929 /* SDevCircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDevCircleButton.swift; sourceTree = "<group>"; };
 		C43713F91C4EDD16005F2929 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C43713FB1C4FCB10005F2929 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +68,9 @@
 		C472D9931C500984001F7F25 /* HelpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		C472D9951C500A62001F7F25 /* HelpTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTable.swift; sourceTree = "<group>"; };
 		C472D9991C50331B001F7F25 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		C472D99B1C509C18001F7F25 /* MessagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
+		C4C7C1EF1C5BE8360027EBEF /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		C4C7C1F11C5BE9EA0027EBEF /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 		C4E940841C4FDF1D00820C1C /* LeftMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuTableViewController.swift; sourceTree = "<group>"; };
 		C4F7713D1C4ED66C00048E94 /* Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Connect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F771401C4ED66C00048E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C405B2701C52E1910002CBF6 /* CoreLocation.framework in Frameworks */,
 				9FCB03AD10A23DF469C69860 /* Pods_Connect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,19 +124,38 @@
 		C4F7713F1C4ED66C00048E94 /* Connect */ = {
 			isa = PBXGroup;
 			children = (
+				C42EE87D1C515D6E002AF8DF /* NearbyPlacesViewController.swift */,
+				C42EE8871C516EA9002AF8DF /* Header.h */,
 				C43713FD1C4FCE6B005F2929 /* MainViewController.swift */,
 				C4F771401C4ED66C00048E94 /* AppDelegate.swift */,
 				C43713F91C4EDD16005F2929 /* ViewController.swift */,
+				C4C7C1EF1C5BE8360027EBEF /* EventsTableViewController.swift */,
 				C43713F71C4EDB04005F2929 /* SDevCircleButton.swift */,
 				C472D9991C50331B001F7F25 /* CustomCell.swift */,
 				C4F771441C4ED66C00048E94 /* Main.storyboard */,
+				C4C7C1F11C5BE9EA0027EBEF /* EventsTableViewCell.swift */,
+				C405B26D1C52BB4D0002CBF6 /* MenuViewController.swift */,
+				C42EE8851C5168D2002AF8DF /* MarkerInfoView.swift */,
+				C42EE8811C5167E2002AF8DF /* GoogleDataProvider.swift */,
+				C4102C891C5BFE0600DB7057 /* ArcLayer.swift */,
+				C4102C8A1C5BFE0600DB7057 /* Colors.swift */,
+				C4102C8B1C5BFE0600DB7057 /* HolderView.swift */,
+				C4102C8C1C5BFE0600DB7057 /* OvalLayer.swift */,
+				C4102C8D1C5BFE0600DB7057 /* RectangleLayer.swift */,
+				C4102C8E1C5BFE0600DB7057 /* TriangleLayer.swift */,
+				C4102C8F1C5BFE0600DB7057 /* LoadViewController.swift */,
+				C42EE8821C5167E2002AF8DF /* GooglePlace.swift */,
+				C472D99B1C509C18001F7F25 /* MessagesTableViewController.swift */,
 				C4E940841C4FDF1D00820C1C /* LeftMenuTableViewController.swift */,
+				C405B26B1C52A4520002CBF6 /* MarkerInfoView.xib */,
 				C472D9931C500984001F7F25 /* HelpView.swift */,
 				C472D9951C500A62001F7F25 /* HelpTable.swift */,
 				C43713FB1C4FCB10005F2929 /* NavigationViewController.swift */,
 				C4F771471C4ED66C00048E94 /* Assets.xcassets */,
+				C4102C871C5BFDE400DB7057 /* HolverViewViewController.swift */,
 				C4F771491C4ED66C00048E94 /* LaunchScreen.storyboard */,
 				C4F7714C1C4ED66C00048E94 /* Info.plist */,
+				C42EE87F1C516753002AF8DF /* PlaceMarker.swift */,
 			);
 			path = Connect;
 			sourceTree = "<group>";
@@ -104,6 +163,7 @@
 		DEB3C33E897A02EA755DB28E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C405B26F1C52E1910002CBF6 /* CoreLocation.framework */,
 				CC06B84E7BD9E0852724DAB5 /* Pods_Connect.framework */,
 			);
 			name = Frameworks;
@@ -170,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C405B26C1C52A4520002CBF6 /* MarkerInfoView.xib in Resources */,
 				C4F7714B1C4ED66C00048E94 /* LaunchScreen.storyboard in Resources */,
 				C4F771481C4ED66C00048E94 /* Assets.xcassets in Resources */,
 				C4F771461C4ED66C00048E94 /* Main.storyboard in Resources */,
@@ -233,13 +294,30 @@
 			files = (
 				C43713FC1C4FCB10005F2929 /* NavigationViewController.swift in Sources */,
 				C43713F81C4EDB04005F2929 /* SDevCircleButton.swift in Sources */,
+				C4102C881C5BFDE400DB7057 /* HolverViewViewController.swift in Sources */,
+				C4102C931C5BFE0600DB7057 /* OvalLayer.swift in Sources */,
 				C43713FA1C4EDD16005F2929 /* ViewController.swift in Sources */,
+				C42EE8831C5167E2002AF8DF /* GoogleDataProvider.swift in Sources */,
+				C42EE8801C516753002AF8DF /* PlaceMarker.swift in Sources */,
+				C4C7C1F01C5BE8360027EBEF /* EventsTableViewController.swift in Sources */,
+				C4102C961C5BFE0600DB7057 /* LoadViewController.swift in Sources */,
 				C472D9961C500A62001F7F25 /* HelpTable.swift in Sources */,
+				C42EE8841C5167E2002AF8DF /* GooglePlace.swift in Sources */,
+				C405B26E1C52BB4D0002CBF6 /* MenuViewController.swift in Sources */,
+				C4102C951C5BFE0600DB7057 /* TriangleLayer.swift in Sources */,
+				C4102C911C5BFE0600DB7057 /* Colors.swift in Sources */,
 				C472D99A1C50331B001F7F25 /* CustomCell.swift in Sources */,
 				C472D9941C500984001F7F25 /* HelpView.swift in Sources */,
+				C4102C901C5BFE0600DB7057 /* ArcLayer.swift in Sources */,
 				C4F771411C4ED66C00048E94 /* AppDelegate.swift in Sources */,
+				C42EE8861C5168D2002AF8DF /* MarkerInfoView.swift in Sources */,
+				C4102C941C5BFE0600DB7057 /* RectangleLayer.swift in Sources */,
+				C42EE87E1C515D6E002AF8DF /* NearbyPlacesViewController.swift in Sources */,
 				C43713FE1C4FCE6B005F2929 /* MainViewController.swift in Sources */,
 				C4E940851C4FDF1D00820C1C /* LeftMenuTableViewController.swift in Sources */,
+				C4C7C1F21C5BE9EA0027EBEF /* EventsTableViewCell.swift in Sources */,
+				C4102C921C5BFE0600DB7057 /* HolderView.swift in Sources */,
+				C472D99C1C509C18001F7F25 /* MessagesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +431,9 @@
 			baseConfigurationReference = 3C5FCF1FEA4D755607689495 /* Pods-Connect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Connect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xor.Connect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -365,7 +445,9 @@
 			baseConfigurationReference = A85CA0A239D7F3670D91670C /* Pods-Connect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Connect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xor.Connect;
 				PRODUCT_NAME = "$(TARGET_NAME)";

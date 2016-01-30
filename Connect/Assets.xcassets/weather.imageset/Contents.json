@@ -2,7 +2,6 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "1453347869_miscellaneous-32.png",
       "scale" : "1x"
     },
     {
@@ -11,7 +10,7 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "1454118777_cell-2-0.png",
+      "filename" : "1454118229_cloud.png",
       "scale" : "2x"
     },
     {
@@ -22,5 +21,8 @@
   "info" : {
     "version" : 1,
     "author" : "xcode"
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
   }
 }

@@ -8,5 +8,10 @@ target 'Connect' do
     pod 'DKCircleButton', '~> 1.1'
     pod 'JTSlideShadowAnimation', '~> 1.0'
     pod 'LGSideMenuController', '~> 1.0.0'
+    pod 'DZNSegmentedControl'
+    pod 'GoogleMaps'
+    pod 'Google'
+    pod 'SwiftyJSON'
+    pod 'OpenWeatherMapAPI', '~> 0.0.5'
 end
 

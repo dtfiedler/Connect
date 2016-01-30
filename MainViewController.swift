@@ -15,14 +15,15 @@ class MainViewController: LGSideMenuController {
     var leftShow = false
     var rightShow = false
     
-    var leftMenu = LeftMenuTableViewController()
+    var leftMenu = MenuViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "toggleMenu", name: "toggleMenu", object: nil)
         
-        leftMenu = self.storyboard?.instantiateViewControllerWithIdentifier("LeftViewController") as! LeftMenuTableViewController
+        leftMenu = self.storyboard?.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
+        print(leftMenu.tableView.cellForRowAtIndexPath(NSIndexPath(forRow: 3, inSection: 0)))
         
         let navigationController = self.storyboard?.instantiateViewControllerWithIdentifier("NavigationController")
        
@@ -31,6 +32,11 @@ class MainViewController: LGSideMenuController {
         self.setLeftViewEnabledWithWidth(self.view.frame.width * 0.75, presentationStyle: LGSideMenuPresentationStyle.SlideBelow, alwaysVisibleOptions: LGSideMenuAlwaysVisibleOptions.OnNone)
 
         self.leftView().addSubview(leftMenu.tableView)
+        
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "toggleMenu", name: kLGSideMenuControllerWillShowLeftViewNotification, object: leftMenu)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "toggleMenu", name: kLGSideMenuControllerWillDismissLeftViewNotification, object: leftMenu)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,6 +56,7 @@ class MainViewController: LGSideMenuController {
     }
     
     func showLeft(){
+        self.view.bringSubviewToFront(leftMenu.tableView)
         self.leftViewWillLayoutSubviewsWithSize(CGSize(width: 200, height: 200) )
         self.showLeftViewAnimated(true, completionHandler: nil)
         self.hideRightViewAnimated(true, completionHandler: nil)
