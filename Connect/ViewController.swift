@@ -307,6 +307,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         button1.selected = false
         if (label1.text == "Events"){
             self.performSegueWithIdentifier("events", sender: self)
+        } else {
+            self.performSegueWithIdentifier("messages", sender: self)
         }
     }
     
@@ -395,8 +397,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         button1.setImage(tintedImage2, forState: .Normal)
         button1.tintColor = pink
         button1.imageView?.contentMode = .ScaleAspectFit
-        button1.removeTarget(self, action: "left", forControlEvents: .TouchUpInside)
-        button1.addTarget(self, action: "showMessages", forControlEvents: .TouchUpInside)
+        //button1.removeTarget(self, action: "left", forControlEvents: .TouchUpInside)
+        //button1.addTarget(self, action: "showMessages", forControlEvents: .TouchUpInside)
         
         let markerImage2 = UIImage(named: "logout");
         let tintedImage1 = markerImage2?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
@@ -426,6 +428,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         button1.setImage(tintedImage1, forState: .Normal)
         button1.tintColor = pink
         button1.imageView?.contentMode = .ScaleAspectFit
+        //button1.removeTarget(self, action: ", forControlEvents: <#T##UIControlEvents#>)
+       // button1.addTarget(self, action: "left", forControlEvents: .TouchUpInside)
         
         let markerImage2 = UIImage(named: "checkMarker");
         let tintedImage2 = markerImage2?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)

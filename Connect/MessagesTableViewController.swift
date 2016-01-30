@@ -13,6 +13,8 @@ class MessagesTableViewController: UITableViewController, DZNSegmentedControlDel
 
     let label = UILabel()
     
+    let teal = UIColor(red: 4/255, green: 217/255, blue: 196/255, alpha: 1)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -93,7 +95,7 @@ class MessagesTableViewController: UITableViewController, DZNSegmentedControlDel
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let headerView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 50))
-        headerView.backgroundColor = UIColor.orangeColor()
+        headerView.backgroundColor = teal
         
         let items = ["Inbox", "Requests"]
         let segmentControl = DZNSegmentedControl(items: items)
