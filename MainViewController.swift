@@ -19,11 +19,14 @@ class MainViewController: LGSideMenuController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "toggleMenu", name: "toggleMenu", object: nil)
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "floormapContent", name: "floormapContent", object: nil)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "homeContent", name: "homeContent", object: nil)
+        
         leftMenu = self.storyboard?.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
-        print(leftMenu.tableView.cellForRowAtIndexPath(NSIndexPath(forRow: 3, inSection: 0)))
         
         let navigationController = self.storyboard?.instantiateViewControllerWithIdentifier("NavigationController")
        
@@ -34,6 +37,7 @@ class MainViewController: LGSideMenuController {
         self.leftView().addSubview(leftMenu.tableView)
         
         
+        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "toggleMenu", name: kLGSideMenuControllerWillShowLeftViewNotification, object: leftMenu)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "toggleMenu", name: kLGSideMenuControllerWillDismissLeftViewNotification, object: leftMenu)
         
@@ -42,6 +46,18 @@ class MainViewController: LGSideMenuController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func floormapContent(){
+        
+        self.rootViewController = self.storyboard?.instantiateViewControllerWithIdentifier("FloorMapNavigationController")
+        toggleMenu()
+    }
+    
+    func homeContent(){
+        
+        self.rootViewController = self.storyboard?.instantiateViewControllerWithIdentifier("NavigationController")
+        toggleMenu()
     }
     
     
@@ -60,12 +76,15 @@ class MainViewController: LGSideMenuController {
         self.leftViewWillLayoutSubviewsWithSize(CGSize(width: 200, height: 200) )
         self.showLeftViewAnimated(true, completionHandler: nil)
         self.hideRightViewAnimated(true, completionHandler: nil)
+        //leftShow = true
     }
     
     func hideLeft(){
+       // leftShow = false
         self.hideLeftViewAnimated(true, completionHandler: nil)
     }
-    
+
+
     func showRight(){
         self.showRightViewAnimated(true, completionHandler: nil)
         self.hideLeftViewAnimated(true, completionHandler: nil)

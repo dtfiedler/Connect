@@ -13,5 +13,6 @@ target 'Connect' do
     pod 'Google'
     pod 'SwiftyJSON'
     pod 'OpenWeatherMapAPI', '~> 0.0.5'
+    pod 'Alamofire', '~> 3.0'
 end
 

@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>DKCircleButton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,27 +62,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>23E5FF4869C1537A5384CB56E2FACC25</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>2AED08D3CF3D74A0BE505B13EF70257D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>38CAF05C09A0D681387E5240A32CE038</key>
+		<key>432ECC54282C84882B482CCB4CF227FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4CB6DB1861BF8BD5ECBDA7D33A534722</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>70E5EADEFA0D167A24784BB627531224</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B4993B475EE567F2F25DCD27A4B50C19</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>BF3BFEFFD5F510A0F882962F942B8C83</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E2B5755772AE73DDC89A00C20BD7E53D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

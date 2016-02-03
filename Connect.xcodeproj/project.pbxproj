@@ -32,6 +32,8 @@
 		C472D9961C500A62001F7F25 /* HelpTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472D9951C500A62001F7F25 /* HelpTable.swift */; };
 		C472D99A1C50331B001F7F25 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472D9991C50331B001F7F25 /* CustomCell.swift */; };
 		C472D99C1C509C18001F7F25 /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472D99B1C509C18001F7F25 /* MessagesTableViewController.swift */; };
+		C49FFE2F1C627A6A008C4375 /* FloorMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FFE2E1C627A6A008C4375 /* FloorMapViewController.swift */; };
+		C49FFE311C627F68008C4375 /* floormap.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C49FFE301C627F68008C4375 /* floormap.pdf */; };
 		C4C7C1F01C5BE8360027EBEF /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C7C1EF1C5BE8360027EBEF /* EventsTableViewController.swift */; };
 		C4C7C1F21C5BE9EA0027EBEF /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C7C1F11C5BE9EA0027EBEF /* EventsTableViewCell.swift */; };
 		C4E940851C4FDF1D00820C1C /* LeftMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E940841C4FDF1D00820C1C /* LeftMenuTableViewController.swift */; };
@@ -69,6 +71,8 @@
 		C472D9951C500A62001F7F25 /* HelpTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTable.swift; sourceTree = "<group>"; };
 		C472D9991C50331B001F7F25 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		C472D99B1C509C18001F7F25 /* MessagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
+		C49FFE2E1C627A6A008C4375 /* FloorMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloorMapViewController.swift; sourceTree = "<group>"; };
+		C49FFE301C627F68008C4375 /* floormap.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = floormap.pdf; path = ../../../Downloads/floormap.pdf; sourceTree = "<group>"; };
 		C4C7C1EF1C5BE8360027EBEF /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		C4C7C1F11C5BE9EA0027EBEF /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 		C4E940841C4FDF1D00820C1C /* LeftMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuTableViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 				C43713F71C4EDB04005F2929 /* SDevCircleButton.swift */,
 				C472D9991C50331B001F7F25 /* CustomCell.swift */,
 				C4F771441C4ED66C00048E94 /* Main.storyboard */,
+				C49FFE2E1C627A6A008C4375 /* FloorMapViewController.swift */,
 				C4C7C1F11C5BE9EA0027EBEF /* EventsTableViewCell.swift */,
 				C405B26D1C52BB4D0002CBF6 /* MenuViewController.swift */,
 				C42EE8851C5168D2002AF8DF /* MarkerInfoView.swift */,
@@ -151,6 +156,7 @@
 				C472D9931C500984001F7F25 /* HelpView.swift */,
 				C472D9951C500A62001F7F25 /* HelpTable.swift */,
 				C43713FB1C4FCB10005F2929 /* NavigationViewController.swift */,
+				C49FFE301C627F68008C4375 /* floormap.pdf */,
 				C4F771471C4ED66C00048E94 /* Assets.xcassets */,
 				C4102C871C5BFDE400DB7057 /* HolverViewViewController.swift */,
 				C4F771491C4ED66C00048E94 /* LaunchScreen.storyboard */,
@@ -230,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C49FFE311C627F68008C4375 /* floormap.pdf in Resources */,
 				C405B26C1C52A4520002CBF6 /* MarkerInfoView.xib in Resources */,
 				C4F7714B1C4ED66C00048E94 /* LaunchScreen.storyboard in Resources */,
 				C4F771481C4ED66C00048E94 /* Assets.xcassets in Resources */,
@@ -318,6 +325,7 @@
 				C4C7C1F21C5BE9EA0027EBEF /* EventsTableViewCell.swift in Sources */,
 				C4102C921C5BFE0600DB7057 /* HolderView.swift in Sources */,
 				C472D99C1C509C18001F7F25 /* MessagesTableViewController.swift in Sources */,
+				C49FFE2F1C627A6A008C4375 /* FloorMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

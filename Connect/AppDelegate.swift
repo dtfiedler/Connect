@@ -21,42 +21,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let googleMapsApiKey = "AIzaSyAaVC1_FoBkiEyRA9DDj1FD0tl97o-Ywp4"
 
-    let pink = UIColor(red: 242/255, green: 87/255, blue: 100/255, alpha: 1)
+    let backgroundColor = UIColor(red: 82/255, green: 81/255, blue: 86/255, alpha: 1.0)
     let teal = UIColor(red: 4/255, green: 217/255, blue: 196/255, alpha: 1)
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: UIFont.systemFontOfSize(20, weight: UIFontWeightLight), NSForegroundColorAttributeName: pink]
+        UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: UIFont.systemFontOfSize(20, weight: UIFontWeightLight), NSForegroundColorAttributeName: UIColor.whiteColor()]
         
-        UINavigationBar.appearance().tintColor = pink
-        //UINavigationBar.appearance().backgroundColor =  UIColor.whiteColor()
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().barTintColor = backgroundColor
         
-       GMSServices.provideAPIKey(googleMapsApiKey)
+        UINavigationBar.appearance().barStyle = .Black
+        GMSServices.provideAPIKey(googleMapsApiKey)
         
-//        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-//        //window?.tintColor = UIColor.whitecolor()
-//        
-//        frontViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("mainController") as? ViewController
-//        
-//        frontNavigationController = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("NavigationController") as? NavigationViewController
-//        
-//        rearViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LeftViewController") as? LeftMenuTableViewController
-//        
-//        mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("sideMenu") as? LGSideMenuController
-//        mainViewController?.rootViewController = frontNavigationController
-//        mainViewController?.setLeftViewEnabledWithWidth(250, presentationStyle: LGSideMenuPresentationStyle.SlideBelow, alwaysVisibleOptions: LGSideMenuAlwaysVisibleOptions.OnNone)
-//        mainViewController?.leftView().addSubview((rearViewController?.tableView)!)
-//        
-////        if let window = window {
-////            window.backgroundColor = UIColor.whiteColor()
-////            window.makeKeyAndVisible()
-//        window!.rootViewController = mainViewController
-//        
-//        
-        
-        
-        //}
+         //UIApplication.sharedApplication().statusBarStyle = .LightContent
     
         return true
     }

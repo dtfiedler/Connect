@@ -85,6 +85,7 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Connect/AFNetworking.framework"
+  install_framework "Pods-Connect/Alamofire.framework"
   install_framework "Pods-Connect/DKCircleButton.framework"
   install_framework "Pods-Connect/DZNSegmentedControl.framework"
   install_framework "Pods-Connect/JTSlideShadowAnimation.framework"
@@ -95,6 +96,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Connect/AFNetworking.framework"
+  install_framework "Pods-Connect/Alamofire.framework"
   install_framework "Pods-Connect/DKCircleButton.framework"
   install_framework "Pods-Connect/DZNSegmentedControl.framework"
   install_framework "Pods-Connect/JTSlideShadowAnimation.framework"

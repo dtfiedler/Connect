@@ -24,10 +24,15 @@
 * THE SOFTWARE.
 */
 
+
 import UIKit
+import GoogleMaps
 
 class MarkerInfoView: UIView {
   
-  @IBOutlet weak var placePhoto: UIImageView!
-  @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var placePhoto: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var directionsButton: UIButton!
+    var coordinates: CLLocationCoordinate2D?
+    
 }

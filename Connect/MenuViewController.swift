@@ -12,8 +12,8 @@ import CoreLocation
 
 class MenuViewController: UITableViewController, CLLocationManagerDelegate {
     
-    var topIcons = ["house", "events", "marker","compass", "phone"]
-    var top = ["HCI", "Events", "", "Directions", "Call"]
+    var topIcons = ["monogram", "events", "marker","compass", "phone"]
+    var top = ["HCI", "Events", "", "Floor Map", "Call"]
     var hotelItems = ["building", "dots"]
     var hotel = ["Amenities", "Make A Request"]
     var explore = ["Reccomended", "Maps", "Flights", "Weather"]
@@ -25,15 +25,23 @@ class MenuViewController: UITableViewController, CLLocationManagerDelegate {
     var headers = [ "", "GE Condos", "Explore", "Me"]
     var locationLabel: [String]?
     
+    let backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1.0)
+    let headerBackgroud = UIColor(red: 70/255, green: 173/255, blue: 0/255, alpha: 1.0)//green color
+    let grayTextColor = UIColor(red: 59/255, green: 59/255, blue: 63/255, alpha: 1.0)
     let pink = UIColor(red: 242/255, green: 87/255, blue: 100/255, alpha: 1)
     let teal = UIColor(red: 4/255, green: 217/255, blue: 196/255, alpha: 1)
     var currentLocation: [NSDictionary]?
     
     let locationManager = CLLocationManager()
-    
+    var isHidden:Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        isHidden = !isHidden
+        UIView.animateWithDuration(0.5) { () -> Void in
+            self.setNeedsStatusBarAppearanceUpdate()
+        }
         
         self.locationManager.requestWhenInUseAuthorization()
         locationManager.delegate = self
@@ -41,6 +49,8 @@ class MenuViewController: UITableViewController, CLLocationManagerDelegate {
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         
+        self.setNeedsStatusBarAppearanceUpdate()
+        //UIApplication.sharedApplication().statusBarHidden = true
         
     }
 
@@ -96,14 +106,11 @@ class MenuViewController: UITableViewController, CLLocationManagerDelegate {
             break
         default:
                 break
-        }
-    
-        
-        
+        }        
         
         let label = UILabel()
         label.frame = CGRect(x: 0, y: 0, width: 100, height: 20)
-        label.textColor = pink
+        label.textColor = grayTextColor
         label.text = "\(labels[indexPath.row])"
         label.center = CGPoint(x: 110, y: 25)
         label.font = UIFont.systemFontOfSize(18, weight: UIFontWeightLight)
@@ -114,7 +121,11 @@ class MenuViewController: UITableViewController, CLLocationManagerDelegate {
         if let image = UIImage(named: "\(icons[indexPath.row])"){
             let imageTinted = image.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
             icon.image = imageTinted
-            icon.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+            if (indexPath.section == 0 && indexPath.row == 0){
+                icon.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+            } else {
+                icon.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+            }
             if (indexPath.section == 0 && indexPath.row == 2){
                 icon.center = CGPoint(x: 30, y: 50)
                 
@@ -130,8 +141,17 @@ class MenuViewController: UITableViewController, CLLocationManagerDelegate {
                 icon.center = CGPoint(x: 30, y: 25)
             }
     
-            icon.tintColor = pink
+            if (indexPath.section == 0 && indexPath.row == 0){
+                icon.tintColor = grayTextColor
+                //icon.tintColor = grayTextColor
+               // icon.backgroundColor = grayTextColor
+            } else {
+                icon.tintColor = grayTextColor
+            }
+           
         }
+        
+        icon.contentMode = .ScaleAspectFit
         
         cell.addSubview(label)
         cell.addSubview(icon)
@@ -162,7 +182,7 @@ class MenuViewController: UITableViewController, CLLocationManagerDelegate {
         }
         
         if (indexPath.row == 0 && indexPath.section == 0){
-            NSNotificationCenter.defaultCenter().postNotificationName("toggleMenu", object: nil)
+            NSNotificationCenter.defaultCenter().postNotificationName("homeContent", object: nil)
         }
         
         if (indexPath.row == 1 && indexPath.section == 0){
@@ -171,6 +191,10 @@ class MenuViewController: UITableViewController, CLLocationManagerDelegate {
         
         if (indexPath.row == 2 && indexPath.section == 0){
             NSNotificationCenter.defaultCenter().postNotificationName("nearby", object: nil)
+        }
+        if (indexPath.row == 3 && indexPath.section == 0){
+            NSNotificationCenter.defaultCenter().postNotificationName("floormapContent", object: nil)
+//            self.performSegueWithIdentifier("floormap", sender: nil)
         }
     }
     
@@ -202,7 +226,7 @@ class MenuViewController: UITableViewController, CLLocationManagerDelegate {
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()
-        headerView.backgroundColor = pink
+        headerView.backgroundColor = headerBackgroud
         headerView.frame = CGRect(x: 0, y: 0, width: tableView.frame.width, height: 40)
         headerView.clipsToBounds = true
         let label = UILabel()
@@ -241,6 +265,20 @@ class MenuViewController: UITableViewController, CLLocationManagerDelegate {
         })
 
     }
+    
+    override func preferredStatusBarUpdateAnimation() -> UIStatusBarAnimation {
+        return .Fade // or return .Fade
+    }
+
+    override func prefersStatusBarHidden() -> Bool {
+    return isHidden
+    }
+
+//    override func prefersStatusBarHidden() -> Bool {
+//        
+//        return self.navigationController!.navigationBarHidden as Bool
+//        
+//    }
     
 
 

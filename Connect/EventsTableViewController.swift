@@ -18,10 +18,15 @@ class EventsTableViewController: UITableViewController {
     
     let times = [ "8:30 AM","9:30 AM","10:00 AM", "11:00 AM","12:00 PM", "12:30 PM", "1:00 PM", "2:00 PM", "3:30 PM","4:00 PM",  "6:30 PM" ]
 
+    let eggWhite = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1.0)
+    let grayTextColor = UIColor(red: 59/255, green: 59/255, blue: 63/255, alpha: 1.0)
+    let greenColor = UIColor(red: 70/255, green: 173/255, blue: 0/255, alpha: 1.0)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationItem.title = "Events"
+        self.tableView.backgroundColor = eggWhite
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -55,11 +60,14 @@ class EventsTableViewController: UITableViewController {
         cell.header.text = "  \(events[indexPath.row])"
         cell.room.text = "Room#: \(rooms[indexPath.row])"
         cell.time.text = "\(times[indexPath.row])"
+        cell.room.textColor = grayTextColor
+        cell.time.textColor = grayTextColor
         //cell.imageView!.center = CGPoint(x: 100, y: 40)
         let imageView = UIImageView(frame: CGRect(x: 20, y: 75, width: 80, height: 80))
         imageView.image = UIImage(named: "noImage")
         imageView.tintColor = UIColor.lightGrayColor()
         cell.addSubview(imageView)
+        cell.backgroundColor = UIColor.clearColor()
         //cell.imageView?.contentMode = .Center
         //cell.imageView!.frame = CGRect(x: cell.imageView!.frame.origin.x + 10000, y: cell.imageView!.frame.origin.y, width: cell.imageView!.frame.width, height: cell.imageView!.frame.height)
         return cell
