@@ -13,7 +13,7 @@ class MessagesTableViewController: UITableViewController, DZNSegmentedControlDel
 
     let label = UILabel()
     
-    let teal = UIColor(red: 4/255, green: 217/255, blue: 196/255, alpha: 1)
+    let teal = UIColor(red: 70/255, green: 173/255, blue: 0/255, alpha: 1.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -139,6 +139,9 @@ class MessagesTableViewController: UITableViewController, DZNSegmentedControlDel
         }
     }
 
+    @IBAction func menuPressed(sender: AnyObject) {
+        NSNotificationCenter.defaultCenter().postNotificationName("messagesContent", object: nil)
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

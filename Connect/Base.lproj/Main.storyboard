@@ -69,10 +69,10 @@
                         <outlet property="imageView" destination="SB4-Th-kqU" id="P4S-zi-Izj"/>
                         <outlet property="weatherImage" destination="qHS-cR-gVS" id="gBO-UU-1Iu"/>
                         <outlet property="weatherLabel" destination="Gc0-CS-aMX" id="Cq4-hb-UcF"/>
-                        <segue destination="LFM-Lr-daI" kind="show" identifier="messages" id="yAr-no-5D7"/>
                         <segue destination="MSy-gS-YI2" kind="show" identifier="nearby" id="o6y-uN-XPH"/>
                         <segue destination="cjb-KJ-Mpi" kind="show" identifier="events" id="FDq-fP-rMK"/>
                         <segue destination="qfj-4m-7wB" kind="show" identifier="floormap" id="MNr-lR-1Ji"/>
+                        <segue destination="LFM-Lr-daI" kind="show" identifier="messages" id="3RU-fm-OtI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -340,10 +340,11 @@
                             <outlet property="delegate" destination="LFM-Lr-daI" id="eBG-Ev-dim"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="ncW-Bw-UPi"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vsP-ME-70s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2466" y="-259"/>
+            <point key="canvasLocation" x="2303" y="-185"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sb8-DU-n8R">
@@ -388,8 +389,8 @@
     <resources>
         <image name="home" width="2559" height="1613"/>
         <image name="icon_me" width="30" height="55"/>
-        <image name="marker" width="26" height="30"/>
-        <image name="menu" width="42" height="42"/>
+        <image name="marker" width="21" height="24"/>
+        <image name="menu" width="28" height="28"/>
         <image name="weather" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>

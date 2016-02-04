@@ -25,6 +25,9 @@ class MainViewController: LGSideMenuController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "floormapContent", name: "floormapContent", object: nil)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "homeContent", name: "homeContent", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "messagesContent", name: "messagesContent", object: nil)
+        
+        
         
         leftMenu = self.storyboard?.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
         
@@ -60,7 +63,12 @@ class MainViewController: LGSideMenuController {
         toggleMenu()
     }
     
+    func messagesContent(){
     
+        self.rootViewController = self.storyboard?.instantiateViewControllerWithIdentifier("MessagesNavigationController")
+            toggleMenu()
+    }
+
     func toggleMenu(){
         if (!leftShow){
             showLeft()

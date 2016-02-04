@@ -12,7 +12,7 @@ import CoreLocation
 
 class MenuViewController: UITableViewController, CLLocationManagerDelegate {
     
-    var topIcons = ["monogram", "events", "marker","compass", "phone"]
+    var topIcons = ["monogram", "events", "marker","map", "phone"]
     var top = ["HCI", "Events", "", "Floor Map", "Call"]
     var hotelItems = ["building", "dots"]
     var hotel = ["Amenities", "Make A Request"]
