@@ -43,6 +43,8 @@ class NearbyPlacesViewController: UIViewController, UIGestureRecognizerDelegate,
         let refresh = UIBarButtonItem(barButtonSystemItem: .Refresh, target: self, action: "refresh")
         refresh.tintColor = UIColor.whiteColor()
         self.navigationItem.rightBarButtonItem = refresh
+        refresh.setTitlePositionAdjustment(UIOffset(horizontal: -15, vertical: 0), forBarMetrics: .Default)
+    
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         addressLabel.hidden = true
@@ -104,6 +106,9 @@ class NearbyPlacesViewController: UIViewController, UIGestureRecognizerDelegate,
         })
     }
 
+    @IBAction func toggleMenu(){
+        NSNotificationCenter.defaultCenter().postNotificationName("toggleMenu", object: nil)
+    }
 }
 
 extension NearbyPlacesViewController: CLLocationManagerDelegate {

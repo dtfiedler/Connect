@@ -14,10 +14,9 @@ import GoogleMaps
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var mainViewController: LGSideMenuController?
-    var rearViewController: LeftMenuTableViewController?
-    var frontViewController: ViewController?
-    var frontNavigationController: NavigationViewController?
+    
+    var kMainViewController: MainViewController?
+    var kNavigationController: UINavigationController?
     
     let googleMapsApiKey = "AIzaSyAaVC1_FoBkiEyRA9DDj1FD0tl97o-Ywp4"
 
@@ -25,14 +24,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let teal = UIColor(red: 4/255, green: 217/255, blue: 196/255, alpha: 1)
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+        kMainViewController = UIApplication.sharedApplication().delegate?.window!?.rootViewController as? MainViewController
+        kMainViewController?.rootViewLayerShadowRadius = 10
+        kMainViewController?.rootViewLayerShadowColor = UIColor.blackColor()
         
         UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: UIFont.systemFontOfSize(20, weight: UIFontWeightLight), NSForegroundColorAttributeName: UIColor.whiteColor()]
+        
         
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         UINavigationBar.appearance().barTintColor = backgroundColor
         
-        UINavigationBar.appearance().barStyle = .Black
+        UINavigationBar.appearance().barStyle = UIBarStyle.Black
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
         GMSServices.provideAPIKey(googleMapsApiKey)
         
          //UIApplication.sharedApplication().statusBarStyle = .LightContent

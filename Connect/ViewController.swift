@@ -60,14 +60,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       // self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
-        //self.setNeedsStatusBarAppearanceUpdate()
         
         weatherLabel.text = ""
         weatherImage.alpha = 0
         
+        //self.navigationController?.viewControllers.
+        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "events", name: "events", object: nil)
-         NSNotificationCenter.defaultCenter().addObserver(self, selector: "nearby", name: "nearby", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "nearby", name: "nearby", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "floormap", name: "floormap", object: nil)
         
         self.locationManager.requestWhenInUseAuthorization()
@@ -212,7 +212,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         blurEffectView2.autoresizingMask = [.FlexibleWidth, .FlexibleHeight] // for supporting device rotation
         blurEffectView2.bounds = self.imageView.bounds
         
-        helpTable = UITableView(frame: CGRect(x: 0, y: view.frame.height * 0.5, width: self.view.frame.width, height: self.view.frame.height/2))
+        helpTable = UITableView(frame: CGRect(x: self.view.frame.width / 2, y: view.frame.height * 0.5, width: self.view.frame.width, height: self.view.frame.height/2))
         helpTable.registerClass(CustomCell.self, forCellReuseIdentifier: "cell")
         helpTable.delegate = self
         helpTable.dataSource = self
@@ -249,9 +249,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.view.addGestureRecognizer(rightSwipe)
         self.view.addSubview(self.blurEffectView2)
         
-        
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -260,12 +257,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     override func viewWillAppear(animated: Bool) {
-        shadowAnimation.animatedView = label4
-        shadowAnimation.shadowWidth = 20
-        shadowAnimation.duration = 3.0
-        shadowAnimation.start()
         
-         self.navigationItem.title = "GE Healthcare Institute"
+        self.navigationItem.title = "GE Healthcare Institute"
     }
     
     func handleSwipes(sender: UISwipeGestureRecognizer){
@@ -546,6 +539,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         NSNotificationCenter.defaultCenter().postNotificationName("toggleMenu", object: nil)
         self.performSegueWithIdentifier("events", sender: self)
     }
+    @IBAction func markerPressed(sender: AnyObject) {
+        self.performSegueWithIdentifier("nearby", sender: self)
+    }
     
     func nearby(){
         NSNotificationCenter.defaultCenter().postNotificationName("toggleMenu", object: nil)
@@ -559,6 +555,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         self.navigationItem.title = ""
+        
+        switch(segue.identifier!){
+            case "nearby":
+                let nearbyVC = segue.destinationViewController as! NearbyPlacesViewController
+                //hide menu bar when pushing too it
+                nearbyVC.navigationItem.setLeftBarButtonItem(nil , animated: true)
+                break
+        default:
+            break
+            
+        }
     }
     
     override func preferredStatusBarUpdateAnimation() -> UIStatusBarAnimation {

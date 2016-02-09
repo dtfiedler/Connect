@@ -62,6 +62,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="marker" id="vPr-bo-cR2">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="markerPressed:" destination="BYZ-38-t0r" id="Nbj-d2-17i"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
@@ -69,10 +72,10 @@
                         <outlet property="imageView" destination="SB4-Th-kqU" id="P4S-zi-Izj"/>
                         <outlet property="weatherImage" destination="qHS-cR-gVS" id="gBO-UU-1Iu"/>
                         <outlet property="weatherLabel" destination="Gc0-CS-aMX" id="Cq4-hb-UcF"/>
-                        <segue destination="MSy-gS-YI2" kind="show" identifier="nearby" id="o6y-uN-XPH"/>
                         <segue destination="cjb-KJ-Mpi" kind="show" identifier="events" id="FDq-fP-rMK"/>
                         <segue destination="qfj-4m-7wB" kind="show" identifier="floormap" id="MNr-lR-1Ji"/>
                         <segue destination="LFM-Lr-daI" kind="show" identifier="messages" id="3RU-fm-OtI"/>
+                        <segue destination="MSy-gS-YI2" kind="show" identifier="nearby" id="efx-c7-NQW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -125,6 +128,13 @@
                             <constraint firstItem="8UX-WZ-7gK" firstAttribute="top" secondItem="nau-Of-4EJ" secondAttribute="bottom" constant="-56" id="rAs-HN-Xsv"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="IGk-f2-LJj">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="ELx-x6-RKB">
+                            <connections>
+                                <action selector="toggleMenu" destination="MSy-gS-YI2" id="YJb-jI-s9l"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="addressLabel" destination="nau-Of-4EJ" id="agX-4f-Y82"/>
                         <outlet property="mapCenterPinImage" destination="CdU-0p-F6o" id="lyr-wd-P7C"/>
@@ -133,7 +143,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zMZ-Xe-0ph" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1728" y="551"/>
+            <point key="canvasLocation" x="3252" y="899"/>
+        </scene>
+        <!--Survey View Controller-->
+        <scene sceneID="51i-0i-hye">
+            <objects>
+                <viewController storyboardIdentifier="Survey" id="et6-oJ-PhE" customClass="SurveyViewController" customModule="Connect" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ry0-mc-t2I"/>
+                        <viewControllerLayoutGuide type="bottom" id="lsP-kp-2Hc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iqq-zI-zYp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="klr-kL-xxl">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="klr-kL-xxl" firstAttribute="leading" secondItem="iqq-zI-zYp" secondAttribute="leading" id="729-v7-cJ2"/>
+                            <constraint firstAttribute="trailing" secondItem="klr-kL-xxl" secondAttribute="trailing" id="Am3-pV-8Kz"/>
+                            <constraint firstItem="klr-kL-xxl" firstAttribute="bottom" secondItem="lsP-kp-2Hc" secondAttribute="top" id="Hd0-8m-KDN"/>
+                            <constraint firstItem="klr-kL-xxl" firstAttribute="top" secondItem="Ry0-mc-t2I" secondAttribute="bottom" constant="-64" id="PRt-nz-QMI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GTI-gm-IJ2">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="myh-AW-UKQ">
+                            <connections>
+                                <action selector="menuButton:" destination="et6-oJ-PhE" id="Ykt-H9-KBj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="klr-kL-xxl" id="iYL-nz-rBp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1d-j7-TcG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1095" y="1412"/>
         </scene>
         <!--Events Table View Controller-->
         <scene sceneID="1dw-Dc-NOH">
@@ -204,7 +254,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9bz-Oi-BdF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1387" y="1264"/>
+            <point key="canvasLocation" x="1763" y="1406"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="9mJ-pu-wq2">
@@ -232,7 +282,6 @@
                     </tableView>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                     <connections>
-                        <segue destination="MSy-gS-YI2" kind="show" identifier="nearby" id="pQl-WM-2Wx"/>
                         <segue destination="qfj-4m-7wB" kind="show" identifier="floormap" id="FG4-RG-pXB"/>
                     </connections>
                 </tableViewController>
@@ -309,6 +358,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="webView" destination="KUA-co-uXV" id="Lo1-cw-IBI"/>
                     </connections>
@@ -371,12 +421,16 @@
             <objects>
                 <navigationController storyboardIdentifier="FloorMapNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="qfj-4m-7wB" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Epm-8t-PP4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="GWv-27-8Ov">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="F8a-ps-DY9" kind="relationship" relationship="rootViewController" id="RLs-YW-bSI"/>
                     </connections>
@@ -385,9 +439,45 @@
             </objects>
             <point key="canvasLocation" x="1458" y="-965"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kNu-nV-Bxs">
+            <objects>
+                <navigationController storyboardIdentifier="NearbyNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="4DL-9H-fd4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mr5-ig-it0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MSy-gS-YI2" kind="relationship" relationship="rootViewController" id="tUn-Yu-0fm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFi-zu-yu0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2516" y="1259"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0JK-Yz-EW9">
+            <objects>
+                <navigationController storyboardIdentifier="SurveyNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="Ta8-rV-Azw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y3Q-Wa-n7E">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="et6-oJ-PhE" kind="relationship" relationship="rootViewController" id="28Y-Ia-VGc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F09-B6-mYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="283" y="1412"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="home" width="2559" height="1613"/>
+        <image name="home" width="1919" height="1209"/>
         <image name="icon_me" width="30" height="55"/>
         <image name="marker" width="21" height="24"/>
         <image name="menu" width="28" height="28"/>
@@ -395,6 +485,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="MNr-lR-1Ji"/>
-        <segue reference="o6y-uN-XPH"/>
+        <segue reference="efx-c7-NQW"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '175C19CD819E5DFF1422C73C'
+               BlueprintIdentifier = '4417DE5A80D902258F227ED0'
                BlueprintName = 'DKCircleButton'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'DKCircleButton.framework'>

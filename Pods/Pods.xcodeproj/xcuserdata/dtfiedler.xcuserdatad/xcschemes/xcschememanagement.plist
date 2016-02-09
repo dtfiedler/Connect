@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Eureka.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JTSlideShadowAnimation.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,6 +62,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0529A55AFEAB76D85D2193CA3CE81166</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>05B3ACEC8F9402E9FE38332F90EF15EA</key>
 		<dict>
 			<key>primary</key>
@@ -67,22 +77,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>31EF08F3444DCD2B169D92269C5BCD3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>432ECC54282C84882B482CCB4CF227FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4CB6DB1861BF8BD5ECBDA7D33A534722</key>
+		<key>8C49F92ED5DA1E3CFB08EFE6996ED564</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>70E5EADEFA0D167A24784BB627531224</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B4993B475EE567F2F25DCD27A4B50C19</key>
+		<key>926D97ED829E7CEC7E0E58EDA6D0FE23</key>
 		<dict>
 			<key>primary</key>
 			<true/>

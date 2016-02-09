@@ -8,21 +8,22 @@
 
 import UIKit
 import CoreLocation
+import LGSideMenuController
 
 
 class MenuViewController: UITableViewController, CLLocationManagerDelegate {
     
-    var topIcons = ["monogram", "events", "marker","map", "phone"]
-    var top = ["HCI", "Events", "", "Floor Map", "Call"]
+    var topIcons = ["monogram", "events", "marker", "survey", "map", "phone"]
+    var top = ["HCI", "Events", "", "Survey", "Floor Map", "Call"]
     var hotelItems = ["building", "dots"]
     var hotel = ["Amenities", "Make A Request"]
-    var explore = ["Reccomended", "Maps", "Flights", "Weather"]
-    var exploreItems = ["star", "map", "plane", "weather"]
+    var explore = ["Reccomended", "Flights", "Weather"]
+    var exploreItems = ["star", "plane", "weather"]
     var me = ["Profile", "Messages", "Checkout"]
     var meIcons = ["profile", "messages2", "exit"]
     var labels = []
     var icons = ["building", "phone","map", "compass", "dots", ""]
-    var headers = [ "", "GE Condos", "Explore", "Me"]
+    var headers = [ "", "RiversEdge Condos", "Explore", "Me"]
     var locationLabel: [String]?
     
     let backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1.0)
@@ -37,25 +38,19 @@ class MenuViewController: UITableViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        isHidden = !isHidden
-        UIView.animateWithDuration(0.5) { () -> Void in
-            self.setNeedsStatusBarAppearanceUpdate()
-        }
-        
         self.locationManager.requestWhenInUseAuthorization()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
-        
-        self.setNeedsStatusBarAppearanceUpdate()
-        //UIApplication.sharedApplication().statusBarHidden = true
-        
-    }
 
+    }
     // MARK: - Table view data source
 
+    
+    override func viewDidDisappear(animated: Bool) {
+        UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: .None)
+    }
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 4
@@ -68,9 +63,9 @@ class MenuViewController: UITableViewController, CLLocationManagerDelegate {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         switch (section){
-        case 0: return 5
+        case 0: return 6
         case 1 : return 2
-        case 2: return 4
+        case 2: return 3
         case 3: return 3
         default: return 1
         }
@@ -165,22 +160,6 @@ class MenuViewController: UITableViewController, CLLocationManagerDelegate {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-        if (indexPath.row == 2 && indexPath.section == 0){
-            
-            let pushVC = NearbyPlacesViewController()
-            let backVC = UIViewController()
-            
-            if let navigationController = navigationController {
-                
-                navigationController.pushViewController(pushVC, animated: true)
-                
-                let stackCount = navigationController.viewControllers.count
-                let addIndex = stackCount - 1
-                navigationController.viewControllers.insert(backVC, atIndex: addIndex)
-                
-            }
-        }
-        
         if (indexPath.row == 0 && indexPath.section == 0){
             NSNotificationCenter.defaultCenter().postNotificationName("homeContent", object: nil)
         }
@@ -189,12 +168,24 @@ class MenuViewController: UITableViewController, CLLocationManagerDelegate {
             NSNotificationCenter.defaultCenter().postNotificationName("events", object: nil)
         }
         
-        if (indexPath.row == 2 && indexPath.section == 0){
-            NSNotificationCenter.defaultCenter().postNotificationName("nearby", object: nil)
+        if ((indexPath.row == 2 && indexPath.section == 0) || (indexPath.row == 1 && indexPath.section == 2)){
+            NSNotificationCenter.defaultCenter().postNotificationName("nearbyContent", object: nil)
         }
+        
         if (indexPath.row == 3 && indexPath.section == 0){
+            NSNotificationCenter.defaultCenter().postNotificationName("surveyContent", object: nil)
+        }
+        
+        if (indexPath.row == 4 && indexPath.section == 0){
             NSNotificationCenter.defaultCenter().postNotificationName("floormapContent", object: nil)
-//            self.performSegueWithIdentifier("floormap", sender: nil)
+        }
+        
+        if (indexPath.row == 5 && indexPath.section == 0){
+            
+            //place call
+            //current number is for RiversEdge condos
+            UIApplication.sharedApplication().openURL(NSURL(string:"telprompt: 2625748621")!)
+            
         }
     }
     
@@ -266,19 +257,14 @@ class MenuViewController: UITableViewController, CLLocationManagerDelegate {
 
     }
     
-    override func preferredStatusBarUpdateAnimation() -> UIStatusBarAnimation {
-        return .Fade // or return .Fade
-    }
+    
+    
 
     override func prefersStatusBarHidden() -> Bool {
-    return isHidden
+        
+        return true
+        
     }
-
-//    override func prefersStatusBarHidden() -> Bool {
-//        
-//        return self.navigationController!.navigationBarHidden as Bool
-//        
-//    }
     
 
 

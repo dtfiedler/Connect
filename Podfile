@@ -14,5 +14,6 @@ target 'Connect' do
     pod 'SwiftyJSON'
     pod 'OpenWeatherMapAPI', '~> 0.0.5'
     pod 'Alamofire', '~> 3.0'
+    pod 'Eureka', '~> 1.3'
 end
 

@@ -17,15 +17,9 @@ class FloorMapViewController: UIViewController {
         super.viewDidLoad()
        
         self.navigationItem.title = "Floor Map"
-//        let floormap = "./floormap.pdf"
-//        let menu = NSBundle.mainBundle().pathForResource(floormap, ofType: "pdf")
-//        let url = NSURL.fileURLWithPath(menu!)
-//        self.webView.loadRequest(NSURLRequest(URL: url))
         
         
-        self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
-         self.setNeedsStatusBarAppearanceUpdate()
-        var pdfLoc = NSURL(fileURLWithPath:NSBundle.mainBundle().pathForResource("floormap", ofType:"pdf")!) //replace PDF_file with your pdf die name
+        let pdfLoc = NSURL(fileURLWithPath:NSBundle.mainBundle().pathForResource("floormap", ofType:"pdf")!) //replace PDF_file with your pdf die name
         let request = NSURLRequest(URL: pdfLoc);
         self.webView.loadRequest(request);
         
@@ -43,6 +37,14 @@ class FloorMapViewController: UIViewController {
     @IBAction func toggleMenu(sender: AnyObject) {
         NSNotificationCenter.defaultCenter().postNotificationName("toggleMenu", object: nil)
     }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .Default
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return false
+    }
     /*
     // MARK: - Navigation
 
@@ -52,9 +54,5 @@ class FloorMapViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-                return UIStatusBarStyle.LightContent
-    }
 
 }
